@@ -1,0 +1,303 @@
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+bind-address: "*"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7894
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  nameserver:
+    - https://puredns.org/dns-query
+    - tls://puredns.org:853
+  fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - 108.137.44.39
+    - 108.137.44.9
+tun:
+  enable: true
+  stack: system 
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - tcp://108.137.44.39:53
+experimental:
+  interface-name: en0
+
+proxies:
+  - {name: 🇻🇳Data còn lại：-0.07 GB, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hạn dùng：20-04-2023, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Singapore 1, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội IDC Free 1, server: 171.244.60.142, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội IDC Free 2, server: 171.244.60.93, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội IDC Free 3, server: 171.244.60.82, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: ?? Japan, server: 2400:8901::f03c:93ff:fe90:f053, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Sing 1 (tiktok), server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: m.tiktok.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: m.tiktok.com}}}
+  - {name: 🇸🇬 Singapore 2, server: sg2.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: , alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: grpc, ws-opts: {path: , headers: {Host: }}}
+  - {name: Germany 1 - Garena, server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Germany 1 - Tiktok, server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Hà Nội 18 - Garena, server: hanoi-18.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Hà Nội 7 - Garena, server: hanoi-7.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Hà Nội 7 - Tiktok, server: hanoi-7.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Hà Nội LQ 🇻🇳, server: max1.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /AnhBin, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Hà Nội Tiktok 🇻🇳, server: max2.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /AnhBin, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Mobifone 🇻🇳, server: max3.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /AnhBin, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Singapore 2 - Garena, server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Singapore 2 - Tiktok, server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: hcm-4.4g.mkvn.net, server: hcm-4.4g.mkvn.net, port: 443, udp: true, type: trojan, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: , skip-cert-verify: true}
+  - {name: hcm-4.4g.mkvn.net 12, server: hcm-4.4g.mkvn.net, port: 443, udp: true, type: trojan, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, sni: , skip-cert-verify: true}
+  - {name: Việt Nam LQ 🇻🇳, server: max.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /AnhBin, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Việt Nam Pro 🇻🇳, server: max6.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /AnhBin, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: Website: internet.ph5gvpn.online, server: vn1.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: ∞G Ultimate 1 ( t.me/v2ray_share_file ), server: bentre4.hoangai.fun, port: 80, type: vmess, uuid: be6a69c6-6fe2-499b-d9ca-af2b270512a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray_share_file, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: ∞G Ultimate 2 ( t.me/v2ray_share_file ), server: bentre2.hoangai.fun, port: 80, type: vmess, uuid: b307a20a-78f1-464f-c864-89914ade402c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray_share_file, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇦🇺 Úc, server: uc.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇨🇳 Hồng Kông, server: hk.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇨🇳 Hồng Kông (1), server: hk.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇨🇳 Hồng Kông Premium, server: hkpre.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇭🇰[GRN] CSA HONGKONG 1 [VT], server: hongkongnew1.csadata4g.me, port: 80, type: vmess, uuid: 9a7c2eec-0acd-4f95-8360-82eaa5d6fa41, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /csadata4g.me, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇭🇰[TT] CSA HONGKONG 2 [VT], server: hongkongnew1.csadata4g.me, port: 80, type: vmess, uuid: 9a7c2eec-0acd-4f95-8360-82eaa5d6fa41, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /csadata4g.me, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 JP, server: jp1.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 JP 2, server: jp1.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 Japan, server: jp1.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 Public JP 1, server: jp.fuzzypn.me, port: 80, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 Public JP 2, server: jp.fuzzypn.me, port: 443, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: grpc, ws-opts: {path: fuzzypn, headers: {Host: }}}
+  - {name: 🇯🇵Japan TLS 443🍄, server: jp1.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇯🇵Japan VIP 1🍄, server: jp1.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇰🇷 Korea, server: hq.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇱🇷 United States, server: us1.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Public SG 1, server: sg.fuzzypn.me, port: 80, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Public SG 2, server: sg.fuzzypn.me, port: 443, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: grpc, ws-opts: {path: fuzzypn, headers: {Host: }}}
+  - {name: 🇸🇬 SG, server: sg1.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 SG 2, server: sg2.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 SG 3 (tiktok), server: sg3.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Sing 1 (tiktok) 17, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Sing Vip, server: sgvip.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Singapore 02 AS, server: sgvn1.ninifalee.com, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Singapore 1 18, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 Singapore 2 36, server: sg2.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: , alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: grpc, ws-opts: {path: , headers: {Host: }}}
+  - {name: b5.zingfast.com.vn, server: b5.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: b7.zingfast.com.vn, server: b7.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: u5.zingfast.com.vn, server: u5.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: u6.zingfast.com.vn, server: u6.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: u7.zingfast.com.vn, server: u7.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: 🇸🇬Singapore VIP 1🍄, server: sg3.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬Singapore VIP 2🍄, server: sg4.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬Singapore VIP 3🍄, server: sg2.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬[GRN] CSA SING 1 [VT], server: singaporenew1.csadata4g.me, port: 80, type: vmess, uuid: 9a7c2eec-0acd-4f95-8360-82eaa5d6fa41, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /csadata4g.me, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬[TT] CSA SING 2 [VT], server: singaporenew1.csadata4g.me, port: 80, type: vmess, uuid: 9a7c2eec-0acd-4f95-8360-82eaa5d6fa41, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /csadata4g.me, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇺🇸 Public US 01, server: us.fuzzypn.me, port: 80, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇺🇸 Public US 02, server: us.fuzzypn.me, port: 443, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: grpc, ws-opts: {path: fuzzypn, headers: {Host: }}}
+  - {name: b8.zingfast.com.vn, server: b8.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: u8.zingfast.com.vn, server: u8.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: 🇺🇸[GRN] CSA USA 1 [VT], server: usanew1.csadata4g.me, port: 80, type: vmess, uuid: 9a7c2eec-0acd-4f95-8360-82eaa5d6fa41, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /csadata4g.me, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇺🇸[TT] CSA USA 2 [VT], server: usanew1.csadata4g.me, port: 80, type: vmess, uuid: 9a7c2eec-0acd-4f95-8360-82eaa5d6fa41, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /csadata4g.me, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳  VN 2, server: vn2.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳  VN 3, server: vn3.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳  VN DN 2, server: dn2.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Basic 2, server: b2.zingfast.com.vn, port: 443, type: vmess, uuid: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 FREE 2 tại MUA4G.XYZ, server: vn2.mua4g.xyz, port: 80, type: vmess, uuid: aa36e573-6344-477b-b0fc-fa4f3e385981, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpn4g.xyz, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 FREE tại MUA4G.XYZ, server: vn1.mua4g.xyz, port: 80, type: vmess, uuid: aa36e573-6344-477b-b0fc-fa4f3e385981, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpn4g.xyz, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 HCM 01, server: hcm.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 HCM 02, server: hcmfly.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 HCM 03, server: hcmfast.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 HCM Premium, server: hcm.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hanoi TLS, server: hanoi1.fuzzyng.net, port: 443, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội 01, server: hn2.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội 02, server: hn01.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội 03, server: hn02.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội 04, server: hn03.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội 05 Final, server: hnfly.fuzzyng.net, port: 80, type: vmess, uuid: 06faa6f2-5b28-45e3-a56f-1cb9c9d9ff2c, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /fuzzyng?ed=2048, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội IDC Free 1 72, server: 171.244.60.142, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội IDC Free 2 96, server: 171.244.60.93, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Hà Nội IDC Free 3 74, server: 171.244.60.82, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 LQ-1 (t.me/share_v2ray_file), server: vinalol.v6.rocks, port: 80, type: vmess, uuid: a70fd40c-8afc-4384-90de-7453f8e687f2, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: , headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 LQ-2 (t.me/share_v2ray_file), server: vinasoi.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: 🇻🇳 LQ-3 (t.me/share_v2ray_file), server: vinalol.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: 🇻🇳 LQ-4 (t.me/share_v2ray_file), server: vinacon.v6.rocks, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: 🇻🇳 LQ-5 (t.me/share_v2ray_file), server: vinasoi.v6.rocks, port: 80, type: vmess, uuid: cf4364d0-69dd-4624-829b-8652549dcc3e, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpngiare.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Spot HCM, server: 103.178.229.184, port: 80, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: , headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Spot HN, server: 103.178.229.183, port: 80, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: , headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Tiktok-2 (t.me/share_v2ray_file), server: vinasoi.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: 🇻🇳 Tiktok-3 (t.me/share_v2ray_file), server: vinalol.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: 🇻🇳 Tiktok-4 (t.me/share_v2ray_file), server: vinacon.v6.rocks, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, sni: , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: , headers: {Host: }}}
+  - {name: 🇻🇳 Tiktok-5 (t.me/share_v2ray_file), server: vinasoi.v6.rocks, port: 80, type: vmess, uuid: cf4364d0-69dd-4624-829b-8652549dcc3e, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vpngiare.net, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 Ultimate 2, server: u2.zingfast.com.vn, port: 443, type: vmess, uuid: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 VN 1, server: vn1.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 VN 4 (Tiktok), server: vn4.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 VN 5 (Tiktok), server: vn5.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 VN DN, server: dn.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳 VN DN 3, server: dn3.ph5gvpn.online, port: 80, type: vmess, uuid: fdb00702-6862-463c-8c6b-f22615a663a1, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /ph5gvpn, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: b3.zingfast.com.vn, server: b3.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: b4.zingfast.com.vn, server: b4.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: vn3.mua4g.xyz, server: vn3.mua4g.xyz, port: 443, udp: true, type: trojan, password: aa36e573-6344-477b-b0fc-fa4f3e385981, sni: , skip-cert-verify: true}
+  - {name: u1.zingfast.com.vn, server: u1.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: u3.zingfast.com.vn, server: u3.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: u4.zingfast.com.vn, server: u4.zingfast.com.vn, port: 443, udp: true, type: trojan, password: 8eab2005-cf82-4929-b4e4-65cc9fa560eb, sni: , skip-cert-verify: true}
+  - {name: 🇻🇳Data còn lại：-0.07 GB 45, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Data còn lại：-0.07 GB (1), server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HCM 1 TLS 443🍄, server: hcmg1.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HCM 1🍄, server: hcmg1.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN Free TLS 443🍄, server: free2.nam4g.com, port: 443, type: vmess, uuid: fd086cfc-596c-48be-9a23-1de65b295179, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN Free🍄, server: free2.nam4g.com, port: 80, type: vmess, uuid: fd086cfc-596c-48be-9a23-1de65b295179, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN IDC 1🍄, server: hnvip.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN IDC 2🍄, server: hnvip.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN M1 1Gbps🍄, server: hcm1.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN M2 1Gbps🍄, server: hn2.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN M3 1Gbps🍄, server: hn4.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN Q3🍄, server: hn3.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳HN VIP 1🍄, server: hnvip1.nam4g.com, port: 80, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hà Nội IDC 3 TLS 443🍄, server: tls3.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hà Nội M1 TLS 443🍄, server: tls1.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hà Nội M2 TLS 443🍄, server: tls2.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hà Nội M3 TLS 443🍄, server: hn4.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hà Nội Q3 TLS 443🍄, server: tls4.nam4g.com, port: 443, type: vmess, uuid: ff8b3edf-51e0-4355-b963-e4ca484e8136, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /nam4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇻🇳Hạn dùng：20-04-2023 94, server: sg1.mua4g.com, port: 80, type: vmess, uuid: aa033fe7-e0da-48bc-a432-82984e8ce580, sni: dl.kgvn.garenanow.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /mua4g.com, headers: {Host: dl.kgvn.garenanow.com}}}
+
+proxy-groups:
+  - name: sshkit-generator
+    type: select
+    proxies:
+      - 🇻🇳Data còn lại：-0.07 GB
+      - 🇻🇳Hạn dùng：20-04-2023
+      - 🇸🇬 Singapore 1
+      - 🇻🇳 Hà Nội IDC Free 1
+      - 🇻🇳 Hà Nội IDC Free 2
+      - 🇻🇳 Hà Nội IDC Free 3
+      - ?? Japan
+      - 🇸🇬 Sing 1 (tiktok)
+      - 🇸🇬 Singapore 2
+      - Germany 1 - Garena
+      - Germany 1 - Tiktok
+      - Hà Nội 18 - Garena
+      - Hà Nội 7 - Garena
+      - Hà Nội 7 - Tiktok
+      - Hà Nội LQ 🇻🇳
+      - Hà Nội Tiktok 🇻🇳
+      - Mobifone 🇻🇳
+      - Singapore 2 - Garena
+      - Singapore 2 - Tiktok
+      - hcm-4.4g.mkvn.net
+      - hcm-4.4g.mkvn.net 12
+      - Việt Nam LQ 🇻🇳
+      - Việt Nam Pro 🇻🇳
+      - Website: internet.ph5gvpn.online
+      - ∞G Ultimate 1 ( t.me/v2ray_share_file )
+      - ∞G Ultimate 2 ( t.me/v2ray_share_file )
+      - 🇦🇺 Úc
+      - 🇨🇳 Hồng Kông
+      - 🇨🇳 Hồng Kông (1)
+      - 🇨🇳 Hồng Kông Premium
+      - 🇭🇰[GRN] CSA HONGKONG 1 [VT]
+      - 🇭🇰[TT] CSA HONGKONG 2 [VT]
+      - 🇯🇵 JP
+      - 🇯🇵 JP 2
+      - 🇯🇵 Japan
+      - 🇯🇵 Public JP 1
+      - 🇯🇵 Public JP 2
+      - 🇯🇵Japan TLS 443🍄
+      - 🇯🇵Japan VIP 1🍄
+      - 🇰🇷 Korea
+      - 🇱🇷 United States
+      - 🇸🇬 Public SG 1
+      - 🇸🇬 Public SG 2
+      - 🇸🇬 SG
+      - 🇸🇬 SG 2
+      - 🇸🇬 SG 3 (tiktok)
+      - 🇸🇬 Sing 1 (tiktok) 17
+      - 🇸🇬 Sing Vip
+      - 🇸🇬 Singapore 02 AS
+      - 🇸🇬 Singapore 1 18
+      - 🇸🇬 Singapore 2 36
+      - b5.zingfast.com.vn
+      - b7.zingfast.com.vn
+      - u5.zingfast.com.vn
+      - u6.zingfast.com.vn
+      - u7.zingfast.com.vn
+      - 🇸🇬Singapore VIP 1🍄
+      - 🇸🇬Singapore VIP 2🍄
+      - 🇸🇬Singapore VIP 3🍄
+      - 🇸🇬[GRN] CSA SING 1 [VT]
+      - 🇸🇬[TT] CSA SING 2 [VT]
+      - 🇺🇸 Public US 01
+      - 🇺🇸 Public US 02
+      - b8.zingfast.com.vn
+      - u8.zingfast.com.vn
+      - 🇺🇸[GRN] CSA USA 1 [VT]
+      - 🇺🇸[TT] CSA USA 2 [VT]
+      - 🇻🇳  VN 2
+      - 🇻🇳  VN 3
+      - 🇻🇳  VN DN 2
+      - 🇻🇳 Basic 2
+      - 🇻🇳 FREE 2 tại MUA4G.XYZ
+      - 🇻🇳 FREE tại MUA4G.XYZ
+      - 🇻🇳 HCM 01
+      - 🇻🇳 HCM 02
+      - 🇻🇳 HCM 03
+      - 🇻🇳 HCM Premium
+      - 🇻🇳 Hanoi TLS
+      - 🇻🇳 Hà Nội 01
+      - 🇻🇳 Hà Nội 02
+      - 🇻🇳 Hà Nội 03
+      - 🇻🇳 Hà Nội 04
+      - 🇻🇳 Hà Nội 05 Final
+      - 🇻🇳 Hà Nội IDC Free 1 72
+      - 🇻🇳 Hà Nội IDC Free 2 96
+      - 🇻🇳 Hà Nội IDC Free 3 74
+      - 🇻🇳 LQ-1 (t.me/share_v2ray_file)
+      - 🇻🇳 LQ-2 (t.me/share_v2ray_file)
+      - 🇻🇳 LQ-3 (t.me/share_v2ray_file)
+      - 🇻🇳 LQ-4 (t.me/share_v2ray_file)
+      - 🇻🇳 LQ-5 (t.me/share_v2ray_file)
+      - 🇻🇳 Spot HCM
+      - 🇻🇳 Spot HN
+      - 🇻🇳 Tiktok-2 (t.me/share_v2ray_file)
+      - 🇻🇳 Tiktok-3 (t.me/share_v2ray_file)
+      - 🇻🇳 Tiktok-4 (t.me/share_v2ray_file)
+      - 🇻🇳 Tiktok-5 (t.me/share_v2ray_file)
+      - 🇻🇳 Ultimate 2
+      - 🇻🇳 VN 1
+      - 🇻🇳 VN 4 (Tiktok)
+      - 🇻🇳 VN 5 (Tiktok)
+      - 🇻🇳 VN DN
+      - 🇻🇳 VN DN 3
+      - b3.zingfast.com.vn
+      - b4.zingfast.com.vn
+      - vn3.mua4g.xyz
+      - u1.zingfast.com.vn
+      - u3.zingfast.com.vn
+      - u4.zingfast.com.vn
+      - 🇻🇳Data còn lại：-0.07 GB 45
+      - 🇻🇳Data còn lại：-0.07 GB (1)
+      - 🇻🇳HCM 1 TLS 443🍄
+      - 🇻🇳HCM 1🍄
+      - 🇻🇳HN Free TLS 443🍄
+      - 🇻🇳HN Free🍄
+      - 🇻🇳HN IDC 1🍄
+      - 🇻🇳HN IDC 2🍄
+      - 🇻🇳HN M1 1Gbps🍄
+      - 🇻🇳HN M2 1Gbps🍄
+      - 🇻🇳HN M3 1Gbps🍄
+      - 🇻🇳HN Q3🍄
+      - 🇻🇳HN VIP 1🍄
+      - 🇻🇳Hà Nội IDC 3 TLS 443🍄
+      - 🇻🇳Hà Nội M1 TLS 443🍄
+      - 🇻🇳Hà Nội M2 TLS 443🍄
+      - 🇻🇳Hà Nội M3 TLS 443🍄
+      - 🇻🇳Hà Nội Q3 TLS 443🍄
+      - 🇻🇳Hạn dùng：20-04-2023 94
+
+rules:
+ - MATCH,sshkit-generator
