@@ -17,29 +17,109 @@ dns:
   fallback: ['https://dns.google/dns-query', 'https://dns.cloudflare.com/dns-query', 'tls://8.8.4.4:853']
   fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:    
+  - {name: "AU澳大利亚001", server: ap.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "AU澳大利亚002", server: ap.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "AU澳大利亚003", server: ap.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "AU澳大利亚流媒体节点001", server: aujs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "AU澳大利亚流媒体节点002", server: aujs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "AU澳大利亚流媒体节点003", server: aujs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "BR巴西流媒体节点001", server: brjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "BR巴西流媒体节点002", server: brjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "BR巴西流媒体节点003", server: brjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CA加拿大001", server: ca.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CA加拿大002", server: ca.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CA加拿大003", server: ca.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CA加拿大流媒体节点001", server: cajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CA加拿大流媒体节点002", server: cajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CA加拿大流媒体节点003", server: cajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CH瑞士流媒体节点001", server: chjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CH瑞士流媒体节点002", server: chjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CH瑞士流媒体节点003", server: chjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CL智利流媒体节点001", server: cljs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CL智利流媒体节点002", server: cljs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "CL智利流媒体节点003", server: cljs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "DE德国001", server: de.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "DE德国002", server: de.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "DE德国003", server: de.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "DE德国流媒体节点001", server: dejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "DE德国流媒体节点002", server: dejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "DE德国流媒体节点003", server: dejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "ES西班牙流媒体节点001", server: esjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "ES西班牙流媒体节点002", server: esjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "ES西班牙流媒体节点003", server: esjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "FR法国流媒体节点001", server: frjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "FR法国流媒体节点002", server: frjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "FR法国流媒体节点003", server: frjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "Germany 1 - Garena", server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Germany 1 - Tiktok", server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "HK香港流媒体节点001", server: hkjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "HK香港流媒体节点002", server: hkjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "HK香港流媒体节点003", server: hkjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "HONGKONG_VAS_GARENA NO.1", server: hk1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "HONGKONG_VAS_GARENA NO.2", server: hk2.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "HONGKONG_VAS_TIKTOK NO.1", server: hk1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "HONGKONG_VAS_TIKTOK NO.2", server: hk2.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Hà Nội LQ 🇻🇳", server: max1.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, password: 6edf1a13-0198-489d-82a0-5be48ae73f18, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "IN印度001", server: in.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "IN印度002", server: in.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "IN印度003", server: in.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "IT意大利流媒体节点001", server: itjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "IT意大利流媒体节点002", server: itjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "IT意大利流媒体节点003", server: itjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "JAPAN_VAS_GARENA NO.1", server: japan1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "JAPAN_VAS_TIKTOK NO.1", server: japan1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "JP日本001+两元店.com", server: jp.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "JP日本002", server: jp.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "JP日本003", server: jp.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "KOREA_VAS_GARENA NO.1", server: korea1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "KOREA_VAS_TIKTOK NO.1", server: korea1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "KR韩国001", server: kr.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "KR韩国002", server: kr.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "KR韩国003", server: kr.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "NF南非001", server: nf.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "NF南非002", server: nf.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "NF南非003", server: nf.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "NL荷兰流媒体节点001", server: nljs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "NL荷兰流媒体节点002", server: nljs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "NL荷兰流媒体节点003", server: nljs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SA沙特阿拉伯流媒体节点001", server: sajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SA沙特阿拉伯流媒体节点002", server: sajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SA沙特阿拉伯流媒体节点003", server: sajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SG新加坡001+两元店yyds", server: sg.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SG新加坡002", server: sg.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SG新加坡003", server: sg.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SG新加坡流媒体节点001", server: sgjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SG新加坡流媒体节点002", server: sgjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SG新加坡流媒体节点003", server: sgjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "SINGAPORE_VAS_GARENA NO.1", server: sing1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "SINGAPORE_VAS_GARENA NO.2", server: sing2.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "SINGAPORE_VAS_TIKTOK NO.1", server: sing1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "SINGAPORE_VAS_TIKTOK NO.2", server: sing2.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "SWE瑞典流媒体节点001", server: swejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SWE瑞典流媒体节点002", server: swejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "SWE瑞典流媒体节点003", server: swejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "Singapore 2 - Garena", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Singapore 2 - Tiktok", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Singapore 2 - Tiktok (1)", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Sài Gòn 4 - Garena", server: hcm-4.4g.mkvn.net, port: 443, type: trojan, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "Sài Gòn 4 - Tiktok", server: hcm-4.4g.mkvn.net, port: 443, type: trojan, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "TTH-VN", server: vpn.choomai.xyz, port: 80, type: vmess, uuid: b3b67842-78f7-4706-dae5-38a47d2180ef, password: b3b67842-78f7-4706-dae5-38a47d2180ef, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "UAE迪拜流媒体节点001", server: uaejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UAE迪拜流媒体节点002", server: uaejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UAE迪拜流媒体节点003", server: uaejs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UK英国001", server: uk.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UK英国002", server: uk.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UK英国流媒体节点001", server: ukjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UK英国流媒体节点002", server: ukjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "UK英国流媒体节点003", server: ukjs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "USA_VAS_GARENA NO.1", server: usa1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "USA_VAS_TIKTOK NO.1", server: usa1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "USA美国001", server: usa.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "USA美国002", server: usa.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "USA美国003", server: usa.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "US美国流媒体节点001", server: usajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "US美国流媒体节点002", server: usajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "US美国流媒体节点003", server: usajs.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "VIETNAM_VAS_GARENA NO.1", server: cloudsever1.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "VIETNAM_VAS_GARENA NO.2", server: cloudsever2.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "VIETNAM_VAS_GARENA NO.3", server: cloudsever3.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
@@ -54,17 +134,42 @@ proxies:
   - {name: "VIETNAM_VAS_TIKTOK NO.4", server: cloudsever4.tuananh4g.com, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, password: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tuananh4g", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Việt Nam LQ 🇻🇳", server: max.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, password: 6edf1a13-0198-489d-82a0-5be48ae73f18, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Việt Nam Pro 🇻🇳", server: max6.flash5g.com, port: 80, type: vmess, uuid: 6edf1a13-0198-489d-82a0-5be48ae73f18, password: 6edf1a13-0198-489d-82a0-5be48ae73f18, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "lu卢森堡001", server: lu.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "lu卢森堡002", server: lu.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "lu卢森堡003", server: lu.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "net.bawill.com", server: net.bawill.com, port: 443, type: vmess, uuid: a011e5d6-ad42-41df-b262-a5f14a1f5076, password: a011e5d6-ad42-41df-b262-a5f14a1f5076, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "∞G Ultimate 1 ( t.me/v2ray_share_file )", server: bentre4.hoangai.fun, port: 80, type: vmess, uuid: be6a69c6-6fe2-499b-d9ca-af2b270512a1, password: be6a69c6-6fe2-499b-d9ca-af2b270512a1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/v2ray_share_file", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "∞G Ultimate 2 ( t.me/v2ray_share_file )", server: bentre2.hoangai.fun, port: 80, type: vmess, uuid: b307a20a-78f1-464f-c864-89914ade402c, password: b307a20a-78f1-464f-c864-89914ade402c, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/v2ray_share_file", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "三分机场.xyz 站内返利65", server: hk1.c.e8bb3fc45ae6.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "剩余流量：94.75 GB", server: hk1.c.e8bb3fc45ae6.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "剩余流量：980.67+GB", server: sg.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "套餐到期：2023-04-20", server: sg.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "套餐到期：2024-03-21", server: hk1.c.e8bb3fc45ae6.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "官网：https://两元店.com/", server: uk.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "距离下次重置剩余：18+天", server: sg.stablize.top, port: 443, type: trojan, uuid: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, password: 57ea91dd-cec3-4ecb-9e9d-31f1dea04bbd, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "距离下次重置剩余：19 天", server: hk1.c.e8bb3fc45ae6.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇦🇺 Úc", server: uc.ph5gvpn.online, port: 80, type: vmess, uuid: addbf473-e902-419d-b18d-74dcf1a4799a, password: addbf473-e902-419d-b18d-74dcf1a4799a, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/ph5gvpn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇨🇦 Canada", server: 172.105.103.229, port: 80, type: vmess, uuid: 40c012ea-72d8-4298-af37-e18a1d8c0c37, password: 40c012ea-72d8-4298-af37-e18a1d8c0c37, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vpn4g.xyz", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇨🇳 Hồng Kông", server: hk.ph5gvpn.online, port: 80, type: vmess, uuid: addbf473-e902-419d-b18d-74dcf1a4799a, password: addbf473-e902-419d-b18d-74dcf1a4799a, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/ph5gvpn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇨🇳 Hồng Kông Premium", server: hkpre.ph5gvpn.online, port: 80, type: vmess, uuid: addbf473-e902-419d-b18d-74dcf1a4799a, password: addbf473-e902-419d-b18d-74dcf1a4799a, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/ph5gvpn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇩🇪 Đức", server: 143.42.53.153, port: 80, type: vmess, uuid: 40c012ea-72d8-4298-af37-e18a1d8c0c37, password: 40c012ea-72d8-4298-af37-e18a1d8c0c37, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vpn4g.xyz", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇭🇰 HONGKONG 01 (LQ)⚡", server: hk1.vpn.fast4g.me, port: 80, type: vmess, uuid: ac0d5825-60a2-4129-bd51-c6f0b5f9b41d, password: ac0d5825-60a2-4129-bd51-c6f0b5f9b41d, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fast4g.net", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰5倍-临时-香港-高级节点1", server: d0cd89648587.sanfen001.pics, port: 16609, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: tcp}
+  - {name: "🇭🇰香港-80端口-01", server: hk80.8b750e3e20aa.sanfen001.pics, port: 80, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/zh-cn/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港-80端口-02", server: hk80-2.8b750e3e20aa.sanfen001.pics, port: 80, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/zh-cn/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港高速接入点-01", server: hk1.c.e8bb3fc45ae6.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港高速接入点-02", server: hk2.c2bfe79372be.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港高速接入点-03", server: hk3.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港高速接入点-04", server: hk4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港高速接入点-05", server: hk5.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰香港高速接入点-06", server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇮🇳 Ấn Độ", server: 192.46.211.240, port: 80, type: vmess, uuid: 40c012ea-72d8-4298-af37-e18a1d8c0c37, password: 40c012ea-72d8-4298-af37-e18a1d8c0c37, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vpn4g.xyz", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇯🇵 Japan ⚡", server: jp.vpn4g.xyz, port: 80, type: vmess, uuid: 40c012ea-72d8-4298-af37-e18a1d8c0c37, password: 40c012ea-72d8-4298-af37-e18a1d8c0c37, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vpn4g.xyz", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇯🇵日本-80端口-04", server: jp80.8b750e3e20aa.sanfen001.pics, port: 80, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇯🇵日本高速接入点-01", server: jp1.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇯🇵日本高速接入点-02", server: jp2.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇯🇵日本高速接入点-03", server: jp3.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇯🇵日本高速接入点-04", server: jp4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "🇰🇷 Korea", server: hq.ph5gvpn.online, port: 80, type: vmess, uuid: addbf473-e902-419d-b18d-74dcf1a4799a, password: addbf473-e902-419d-b18d-74dcf1a4799a, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/ph5gvpn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇸🇬 SING 07 (IP - LQ)⚡", server: 159.65.1.168, port: 80, type: vmess, uuid: ac0d5825-60a2-4129-bd51-c6f0b5f9b41d, password: ac0d5825-60a2-4129-bd51-c6f0b5f9b41d, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fast4g.me", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇸🇬 SINGAPORE 01 (LQ)", server: sing1.skypn.fun, port: 80, type: vmess, uuid: d35d0d8c-cf88-45f6-92b8-eb3c5b318e70, password: d35d0d8c-cf88-45f6-92b8-eb3c5b318e70, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/skypn.fun", headers: {Host: dl.kgvn.garenanow.com}}}
@@ -74,8 +179,17 @@ proxies:
   - {name: "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (14) (1)", server: 178.128.209.143, port: 80, type: vmess, uuid: 65dd7a95-1c61-4a3d-8cfe-820180a61c5d, password: 65dd7a95-1c61-4a3d-8cfe-820180a61c5d, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/zingfast/", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(13)+(1)", server: 178.128.209.143, port: 443, type: trojan, uuid: 65dd7a95-1c61-4a3d-8cfe-820180a61c5d, password: 65dd7a95-1c61-4a3d-8cfe-820180a61c5d, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(9)+(1)", server: 157.230.242.199, port: 443, type: trojan, uuid: 65dd7a95-1c61-4a3d-8cfe-820180a61c5d, password: 65dd7a95-1c61-4a3d-8cfe-820180a61c5d, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇸🇬5倍-临时-新加坡-高级节点2", server: 2f36c18cfe75.sanfen001.pics, port: 15526, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: tcp}
+  - {name: "🇸🇬新加坡高速接入点-01", server: sg1.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇸🇬新加坡高速接入点-02", server: sg2.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇸🇬新加坡高速接入点-03", server: sg3.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇸🇬新加坡高速接入点-04", server: sg4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇹🇼台北高级接入点-01", server: tw1.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇹🇼台北高级接入点-02", server: tw2.sanfen001.pics, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "🇺🇸 USA", server: 176.58.102.73, port: 80, type: vmess, uuid: 40c012ea-72d8-4298-af37-e18a1d8c0c37, password: 40c012ea-72d8-4298-af37-e18a1d8c0c37, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vpn4g.xyz", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇺🇸 USA 02 (LQ)", server: 165.22.14.195, port: 80, type: vmess, uuid: d35d0d8c-cf88-45f6-92b8-eb3c5b318e70, password: d35d0d8c-cf88-45f6-92b8-eb3c5b318e70, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/skypn.fun", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇺🇸美国高速接入点-01", server: cfcdn.sanfencdn.net, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇺🇸美国高速接入点-02", server: cfcdn.sanfencdn.net, port: 443, type: vmess, uuid: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, password: 0903eaf5-4af1-4b85-bd45-c35d011f6b84, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/zh-cn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇻🇳 ANTI 01 (TIKTOK)⚡", server: 14.225.33.169, port: 80, type: vmess, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fast4g.me", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇻🇳 ANTIDDOS 01 (HN)⚡", server: 14.225.33.169, port: 80, type: vmess, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fast4g.me", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇻🇳 ANTIDDOS 02 (HN)⚡", server: 14.225.33.169, port: 443, type: vmess, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "fast4g.me"}}
@@ -167,9 +281,7 @@ proxies:
   - {name: "📶SING SV2-MOBIFONE🇸🇬", server: 172.104.187.96, port: 80, type: vmess, uuid: 47397476-f807-4432-9cb3-6139dfc7373d, password: 47397476-f807-4432-9cb3-6139dfc7373d, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/5gtocdocao.com", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "📶SING SV2-TIKTOK🇸🇬", server: 172.104.187.96, port: 80, type: vmess, uuid: 47397476-f807-4432-9cb3-6139dfc7373d, password: 47397476-f807-4432-9cb3-6139dfc7373d, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/5gtocdocao.com", headers: {Host: dl.kgvn.garenanow.com}}}
 proxy-groups:
-  - { name: "auto 2h", type: fallback, proxies: ["Germany 1 - Garena", "Germany 1 - Tiktok", "HONGKONG_VAS_GARENA NO.1", "HONGKONG_VAS_GARENA NO.2", "HONGKONG_VAS_TIKTOK NO.1", "HONGKONG_VAS_TIKTOK NO.2", "Hà Nội LQ 🇻🇳", "JAPAN_VAS_GARENA NO.1", "JAPAN_VAS_TIKTOK NO.1", "KOREA_VAS_GARENA NO.1", "KOREA_VAS_TIKTOK NO.1", "SINGAPORE_VAS_GARENA NO.1", "SINGAPORE_VAS_GARENA NO.2", "SINGAPORE_VAS_TIKTOK NO.1", "SINGAPORE_VAS_TIKTOK NO.2", "Singapore 2 - Garena", "Singapore 2 - Tiktok", "Singapore 2 - Tiktok (1)", "Sài Gòn 4 - Garena", "Sài Gòn 4 - Tiktok", "TTH-VN", "USA_VAS_GARENA NO.1", "USA_VAS_TIKTOK NO.1", "VIETNAM_VAS_GARENA NO.1", "VIETNAM_VAS_GARENA NO.2", "VIETNAM_VAS_GARENA NO.3", "VIETNAM_VAS_GARENA NO.4", "VIETNAM_VAS_GARENA NO.5", "VIETNAM_VAS_GARENA NO.6", "VIETNAM_VAS_GARENA NO.7", "VIETNAM_VAS_GARENA NO.8", "VIETNAM_VAS_TIKTOK NO.1", "VIETNAM_VAS_TIKTOK NO.2", "VIETNAM_VAS_TIKTOK NO.3", "VIETNAM_VAS_TIKTOK NO.4", "Việt Nam LQ 🇻🇳", "Việt Nam Pro 🇻🇳", "net.bawill.com", "∞G Ultimate 1 ( t.me/v2ray_share_file )", "∞G Ultimate 2 ( t.me/v2ray_share_file )", "🇦🇺 Úc", "🇨🇦 Canada", "🇨🇳 Hồng Kông", "🇨🇳 Hồng Kông Premium", "🇩🇪 Đức", "🇭🇰 HONGKONG 01 (LQ)⚡", "🇮🇳 Ấn Độ", "🇯🇵 Japan ⚡", "🇰🇷 Korea", "🇸🇬 SING 07 (IP - LQ)⚡", "🇸🇬 SINGAPORE 01 (LQ)", "🇸🇬 SINGAPORE 07 (LQ)", "🇸🇬 Sing Vip", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (10) (1)", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (14) (1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(13)+(1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(9)+(1)", "🇺🇸 USA", "🇺🇸 USA 02 (LQ)", "🇻🇳 ANTI 01 (TIKTOK)⚡", "🇻🇳 ANTIDDOS 01 (HN)⚡", "🇻🇳 ANTIDDOS 02 (HN)⚡", "🇻🇳 ANTIDDOS 03 (HCM)⚡", "🇻🇳 ANTIDDOS 04 (HCM)⚡", "🇻🇳 Basic 2", "🇻🇳 FREE 2 tại MUA4G.XYZ", "🇻🇳 FREE tại MUA4G.XYZ", "🇻🇳 GAME HN (443 LQ)", "🇻🇳 Game 🔄🎮", "🇻🇳 HANOI 01 (LQ)", "🇻🇳 HANOI 01 (LQ)⚡", "🇻🇳 HANOI 02 (LQ)", "🇻🇳 HANOI 02 (LQ)⚡", "🇻🇳 HANOI 03 (IP - LQ)⚡", "🇻🇳 HANOI 03 (LQ)", "🇻🇳 HANOI 04 (IP - LQ)⚡", "🇻🇳 HANOI 05 (LQ)⚡", "🇻🇳 HANOI 06 (LQ)", "🇻🇳 HANOI 09 (LQ)⚡", "🇻🇳 HANOI 10 (IP - LQ)⚡", "🇻🇳 Hà Nội IDC Free 1", "🇻🇳 Hà Nội IDC Free 2", "🇻🇳 Hà Nội IDC Free 3", "🇻🇳 Spot HCM", "🇻🇳 Spot HN", "🇻🇳 Việt Nam 5 ⚡", "🇻🇳 zingfast Antiddos (1)", "🇻🇳 zingfast Antiddos (10)", "🇻🇳 zingfast Antiddos (11)", "🇻🇳 zingfast Antiddos (12)", "🇻🇳 zingfast Antiddos (13)", "🇻🇳 zingfast Antiddos (14)", "🇻🇳 zingfast Antiddos (2)", "🇻🇳 zingfast Antiddos (3)", "🇻🇳 zingfast Antiddos (4)", "🇻🇳 zingfast Antiddos (5)", "🇻🇳 zingfast Antiddos (6)", "🇻🇳 zingfast Antiddos (7)", "🇻🇳 zingfast Antiddos (8)", "🇻🇳 zingfast Antiddos (9)", "🇻🇳 zingfast Mobifone (1)", "🇻🇳 zingfast Mobifone (2)", "🇻🇳 zingfast Mobifone (3)", "🇻🇳 zingfast Mobifone (4)", "🇻🇳 zingfast Mobifone (5)", "🇻🇳 zingfast Mobifone (6)", "🇻🇳 zingfast Mobifone (7)", "🇻🇳 zingfast TikTok (1)", "🇻🇳 zingfast TikTok (2)", "🇻🇳 zingfast TikTok (3)", "🇻🇳 zingfast TikTok (4)", "🇻🇳 zingfast TikTok (5)", "🇻🇳 zingfast TikTok (6)", "🇻🇳 zingfast TikTok (7)", "🇻🇳 ĐÀ NẴNG 01 (LQ)", "🇻🇳 ĐÀ NẴNG 01 (LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (IP - LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (LQ)", "🇻🇳 ĐÀ NẴNG 03 (LQ)", "🇻🇳HN Free TLS 443🍄", "🇻🇳HN Free🍄", "🇻🇳LQ Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 2( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 4 ( t.me/share_v2ray_file )", "🇻🇳TLS 3 LiênQuânMobile", "🇻🇳Tiktok  Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 2 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 4 ( t.me/share_v2ray_file )", "📶 Nước Anh-LQ-443", "📶 Nước Anh-TIKTOK", "📶 Nước MỸ - LQ-443🇺🇸", "📶 Nước MỸ - LQ🇺🇸", "📶 Nước Úc - LQ🇦🇺", "📶 Nước Úc -LQ-443🇦🇺", "📶5GTDC SV1-LQ🇻🇳", "📶5GTDC SV1-MOBIFONE🇻🇳", "📶JAPAN SV1-LQ-443🇯🇵", "📶JAPAN SV1-LQ-🇯🇵", "📶JAPAN SV2-LQ-443🇯🇵", "📶JAPAN SV2-LQ-🇯🇵", "📶SING MOBIFONE SV1-LQ🇸🇬", "📶SING SV1-443-LQ🇸🇬", "📶SING SV1-LQ🇸🇬", "📶SING SV2-443-LQ🇸🇬", "📶SING SV2-LQ🇸🇬", "📶SING SV2-MOBIFONE🇸🇬", "📶SING SV2-TIKTOK🇸🇬"], url: "http://www.gstatic.com/generate_204", interval: 7200 }
-  - { name: "auto 24h", type: url-test, proxies: ["Germany 1 - Garena", "Germany 1 - Tiktok", "HONGKONG_VAS_GARENA NO.1", "HONGKONG_VAS_GARENA NO.2", "HONGKONG_VAS_TIKTOK NO.1", "HONGKONG_VAS_TIKTOK NO.2", "Hà Nội LQ 🇻🇳", "JAPAN_VAS_GARENA NO.1", "JAPAN_VAS_TIKTOK NO.1", "KOREA_VAS_GARENA NO.1", "KOREA_VAS_TIKTOK NO.1", "SINGAPORE_VAS_GARENA NO.1", "SINGAPORE_VAS_GARENA NO.2", "SINGAPORE_VAS_TIKTOK NO.1", "SINGAPORE_VAS_TIKTOK NO.2", "Singapore 2 - Garena", "Singapore 2 - Tiktok", "Singapore 2 - Tiktok (1)", "Sài Gòn 4 - Garena", "Sài Gòn 4 - Tiktok", "TTH-VN", "USA_VAS_GARENA NO.1", "USA_VAS_TIKTOK NO.1", "VIETNAM_VAS_GARENA NO.1", "VIETNAM_VAS_GARENA NO.2", "VIETNAM_VAS_GARENA NO.3", "VIETNAM_VAS_GARENA NO.4", "VIETNAM_VAS_GARENA NO.5", "VIETNAM_VAS_GARENA NO.6", "VIETNAM_VAS_GARENA NO.7", "VIETNAM_VAS_GARENA NO.8", "VIETNAM_VAS_TIKTOK NO.1", "VIETNAM_VAS_TIKTOK NO.2", "VIETNAM_VAS_TIKTOK NO.3", "VIETNAM_VAS_TIKTOK NO.4", "Việt Nam LQ 🇻🇳", "Việt Nam Pro 🇻🇳", "net.bawill.com", "∞G Ultimate 1 ( t.me/v2ray_share_file )", "∞G Ultimate 2 ( t.me/v2ray_share_file )", "🇦🇺 Úc", "🇨🇦 Canada", "🇨🇳 Hồng Kông", "🇨🇳 Hồng Kông Premium", "🇩🇪 Đức", "🇭🇰 HONGKONG 01 (LQ)⚡", "🇮🇳 Ấn Độ", "🇯🇵 Japan ⚡", "🇰🇷 Korea", "🇸🇬 SING 07 (IP - LQ)⚡", "🇸🇬 SINGAPORE 01 (LQ)", "🇸🇬 SINGAPORE 07 (LQ)", "🇸🇬 Sing Vip", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (10) (1)", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (14) (1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(13)+(1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(9)+(1)", "🇺🇸 USA", "🇺🇸 USA 02 (LQ)", "🇻🇳 ANTI 01 (TIKTOK)⚡", "🇻🇳 ANTIDDOS 01 (HN)⚡", "🇻🇳 ANTIDDOS 02 (HN)⚡", "🇻🇳 ANTIDDOS 03 (HCM)⚡", "🇻🇳 ANTIDDOS 04 (HCM)⚡", "🇻🇳 Basic 2", "🇻🇳 FREE 2 tại MUA4G.XYZ", "🇻🇳 FREE tại MUA4G.XYZ", "🇻🇳 GAME HN (443 LQ)", "🇻🇳 Game 🔄🎮", "🇻🇳 HANOI 01 (LQ)", "🇻🇳 HANOI 01 (LQ)⚡", "🇻🇳 HANOI 02 (LQ)", "🇻🇳 HANOI 02 (LQ)⚡", "🇻🇳 HANOI 03 (IP - LQ)⚡", "🇻🇳 HANOI 03 (LQ)", "🇻🇳 HANOI 04 (IP - LQ)⚡", "🇻🇳 HANOI 05 (LQ)⚡", "🇻🇳 HANOI 06 (LQ)", "🇻🇳 HANOI 09 (LQ)⚡", "🇻🇳 HANOI 10 (IP - LQ)⚡", "🇻🇳 Hà Nội IDC Free 1", "🇻🇳 Hà Nội IDC Free 2", "🇻🇳 Hà Nội IDC Free 3", "🇻🇳 Spot HCM", "🇻🇳 Spot HN", "🇻🇳 Việt Nam 5 ⚡", "🇻🇳 zingfast Antiddos (1)", "🇻🇳 zingfast Antiddos (10)", "🇻🇳 zingfast Antiddos (11)", "🇻🇳 zingfast Antiddos (12)", "🇻🇳 zingfast Antiddos (13)", "🇻🇳 zingfast Antiddos (14)", "🇻🇳 zingfast Antiddos (2)", "🇻🇳 zingfast Antiddos (3)", "🇻🇳 zingfast Antiddos (4)", "🇻🇳 zingfast Antiddos (5)", "🇻🇳 zingfast Antiddos (6)", "🇻🇳 zingfast Antiddos (7)", "🇻🇳 zingfast Antiddos (8)", "🇻🇳 zingfast Antiddos (9)", "🇻🇳 zingfast Mobifone (1)", "🇻🇳 zingfast Mobifone (2)", "🇻🇳 zingfast Mobifone (3)", "🇻🇳 zingfast Mobifone (4)", "🇻🇳 zingfast Mobifone (5)", "🇻🇳 zingfast Mobifone (6)", "🇻🇳 zingfast Mobifone (7)", "🇻🇳 zingfast TikTok (1)", "🇻🇳 zingfast TikTok (2)", "🇻🇳 zingfast TikTok (3)", "🇻🇳 zingfast TikTok (4)", "🇻🇳 zingfast TikTok (5)", "🇻🇳 zingfast TikTok (6)", "🇻🇳 zingfast TikTok (7)", "🇻🇳 ĐÀ NẴNG 01 (LQ)", "🇻🇳 ĐÀ NẴNG 01 (LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (IP - LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (LQ)", "🇻🇳 ĐÀ NẴNG 03 (LQ)", "🇻🇳HN Free TLS 443🍄", "🇻🇳HN Free🍄", "🇻🇳LQ Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 2( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 4 ( t.me/share_v2ray_file )", "🇻🇳TLS 3 LiênQuânMobile", "🇻🇳Tiktok  Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 2 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 4 ( t.me/share_v2ray_file )", "📶 Nước Anh-LQ-443", "📶 Nước Anh-TIKTOK", "📶 Nước MỸ - LQ-443🇺🇸", "📶 Nước MỸ - LQ🇺🇸", "📶 Nước Úc - LQ🇦🇺", "📶 Nước Úc -LQ-443🇦🇺", "📶5GTDC SV1-LQ🇻🇳", "📶5GTDC SV1-MOBIFONE🇻🇳", "📶JAPAN SV1-LQ-443🇯🇵", "📶JAPAN SV1-LQ-🇯🇵", "📶JAPAN SV2-LQ-443🇯🇵", "📶JAPAN SV2-LQ-🇯🇵", "📶SING MOBIFONE SV1-LQ🇸🇬", "📶SING SV1-443-LQ🇸🇬", "📶SING SV1-LQ🇸🇬", "📶SING SV2-443-LQ🇸🇬", "📶SING SV2-LQ🇸🇬", "📶SING SV2-MOBIFONE🇸🇬", "📶SING SV2-TIKTOK🇸🇬"], url: "http://www.gstatic.com/generate_204", interval: 86400 }
-  - { name: T.ME/SHARE_V2RAY_FILE, type: select, proxies: ["auto 2h", "auto 24h", "Germany 1 - Garena", "Germany 1 - Tiktok", "HONGKONG_VAS_GARENA NO.1", "HONGKONG_VAS_GARENA NO.2", "HONGKONG_VAS_TIKTOK NO.1", "HONGKONG_VAS_TIKTOK NO.2", "Hà Nội LQ 🇻🇳", "JAPAN_VAS_GARENA NO.1", "JAPAN_VAS_TIKTOK NO.1", "KOREA_VAS_GARENA NO.1", "KOREA_VAS_TIKTOK NO.1", "SINGAPORE_VAS_GARENA NO.1", "SINGAPORE_VAS_GARENA NO.2", "SINGAPORE_VAS_TIKTOK NO.1", "SINGAPORE_VAS_TIKTOK NO.2", "Singapore 2 - Garena", "Singapore 2 - Tiktok", "Singapore 2 - Tiktok (1)", "Sài Gòn 4 - Garena", "Sài Gòn 4 - Tiktok", "TTH-VN", "USA_VAS_GARENA NO.1", "USA_VAS_TIKTOK NO.1", "VIETNAM_VAS_GARENA NO.1", "VIETNAM_VAS_GARENA NO.2", "VIETNAM_VAS_GARENA NO.3", "VIETNAM_VAS_GARENA NO.4", "VIETNAM_VAS_GARENA NO.5", "VIETNAM_VAS_GARENA NO.6", "VIETNAM_VAS_GARENA NO.7", "VIETNAM_VAS_GARENA NO.8", "VIETNAM_VAS_TIKTOK NO.1", "VIETNAM_VAS_TIKTOK NO.2", "VIETNAM_VAS_TIKTOK NO.3", "VIETNAM_VAS_TIKTOK NO.4", "Việt Nam LQ 🇻🇳", "Việt Nam Pro 🇻🇳", "net.bawill.com", "∞G Ultimate 1 ( t.me/v2ray_share_file )", "∞G Ultimate 2 ( t.me/v2ray_share_file )", "🇦🇺 Úc", "🇨🇦 Canada", "🇨🇳 Hồng Kông", "🇨🇳 Hồng Kông Premium", "🇩🇪 Đức", "🇭🇰 HONGKONG 01 (LQ)⚡", "🇮🇳 Ấn Độ", "🇯🇵 Japan ⚡", "🇰🇷 Korea", "🇸🇬 SING 07 (IP - LQ)⚡", "🇸🇬 SINGAPORE 01 (LQ)", "🇸🇬 SINGAPORE 07 (LQ)", "🇸🇬 Sing Vip", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (10) (1)", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (14) (1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(13)+(1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(9)+(1)", "🇺🇸 USA", "🇺🇸 USA 02 (LQ)", "🇻🇳 ANTI 01 (TIKTOK)⚡", "🇻🇳 ANTIDDOS 01 (HN)⚡", "🇻🇳 ANTIDDOS 02 (HN)⚡", "🇻🇳 ANTIDDOS 03 (HCM)⚡", "🇻🇳 ANTIDDOS 04 (HCM)⚡", "🇻🇳 Basic 2", "🇻🇳 FREE 2 tại MUA4G.XYZ", "🇻🇳 FREE tại MUA4G.XYZ", "🇻🇳 GAME HN (443 LQ)", "🇻🇳 Game 🔄🎮", "🇻🇳 HANOI 01 (LQ)", "🇻🇳 HANOI 01 (LQ)⚡", "🇻🇳 HANOI 02 (LQ)", "🇻🇳 HANOI 02 (LQ)⚡", "🇻🇳 HANOI 03 (IP - LQ)⚡", "🇻🇳 HANOI 03 (LQ)", "🇻🇳 HANOI 04 (IP - LQ)⚡", "🇻🇳 HANOI 05 (LQ)⚡", "🇻🇳 HANOI 06 (LQ)", "🇻🇳 HANOI 09 (LQ)⚡", "🇻🇳 HANOI 10 (IP - LQ)⚡", "🇻🇳 Hà Nội IDC Free 1", "🇻🇳 Hà Nội IDC Free 2", "🇻🇳 Hà Nội IDC Free 3", "🇻🇳 Spot HCM", "🇻🇳 Spot HN", "🇻🇳 Việt Nam 5 ⚡", "🇻🇳 zingfast Antiddos (1)", "🇻🇳 zingfast Antiddos (10)", "🇻🇳 zingfast Antiddos (11)", "🇻🇳 zingfast Antiddos (12)", "🇻🇳 zingfast Antiddos (13)", "🇻🇳 zingfast Antiddos (14)", "🇻🇳 zingfast Antiddos (2)", "🇻🇳 zingfast Antiddos (3)", "🇻🇳 zingfast Antiddos (4)", "🇻🇳 zingfast Antiddos (5)", "🇻🇳 zingfast Antiddos (6)", "🇻🇳 zingfast Antiddos (7)", "🇻🇳 zingfast Antiddos (8)", "🇻🇳 zingfast Antiddos (9)", "🇻🇳 zingfast Mobifone (1)", "🇻🇳 zingfast Mobifone (2)", "🇻🇳 zingfast Mobifone (3)", "🇻🇳 zingfast Mobifone (4)", "🇻🇳 zingfast Mobifone (5)", "🇻🇳 zingfast Mobifone (6)", "🇻🇳 zingfast Mobifone (7)", "🇻🇳 zingfast TikTok (1)", "🇻🇳 zingfast TikTok (2)", "🇻🇳 zingfast TikTok (3)", "🇻🇳 zingfast TikTok (4)", "🇻🇳 zingfast TikTok (5)", "🇻🇳 zingfast TikTok (6)", "🇻🇳 zingfast TikTok (7)", "🇻🇳 ĐÀ NẴNG 01 (LQ)", "🇻🇳 ĐÀ NẴNG 01 (LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (IP - LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (LQ)", "🇻🇳 ĐÀ NẴNG 03 (LQ)", "🇻🇳HN Free TLS 443🍄", "🇻🇳HN Free🍄", "🇻🇳LQ Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 2( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 4 ( t.me/share_v2ray_file )", "🇻🇳TLS 3 LiênQuânMobile", "🇻🇳Tiktok  Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 2 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 4 ( t.me/share_v2ray_file )", "📶 Nước Anh-LQ-443", "📶 Nước Anh-TIKTOK", "📶 Nước MỸ - LQ-443🇺🇸", "📶 Nước MỸ - LQ🇺🇸", "📶 Nước Úc - LQ🇦🇺", "📶 Nước Úc -LQ-443🇦🇺", "📶5GTDC SV1-LQ🇻🇳", "📶5GTDC SV1-MOBIFONE🇻🇳", "📶JAPAN SV1-LQ-443🇯🇵", "📶JAPAN SV1-LQ-🇯🇵", "📶JAPAN SV2-LQ-443🇯🇵", "📶JAPAN SV2-LQ-🇯🇵", "📶SING MOBIFONE SV1-LQ🇸🇬", "📶SING SV1-443-LQ🇸🇬", "📶SING SV1-LQ🇸🇬", "📶SING SV2-443-LQ🇸🇬", "📶SING SV2-LQ🇸🇬", "📶SING SV2-MOBIFONE🇸🇬", "📶SING SV2-TIKTOK🇸🇬"] }
+  - { name: "aUto", type: url-test, proxies: ["AU澳大利亚001", "AU澳大利亚002", "AU澳大利亚003", "AU澳大利亚流媒体节点001", "AU澳大利亚流媒体节点002", "AU澳大利亚流媒体节点003", "BR巴西流媒体节点001", "BR巴西流媒体节点002", "BR巴西流媒体节点003", "CA加拿大001", "CA加拿大002", "CA加拿大003", "CA加拿大流媒体节点001", "CA加拿大流媒体节点002", "CA加拿大流媒体节点003", "CH瑞士流媒体节点001", "CH瑞士流媒体节点002", "CH瑞士流媒体节点003", "CL智利流媒体节点001", "CL智利流媒体节点002", "CL智利流媒体节点003", "DE德国001", "DE德国002", "DE德国003", "DE德国流媒体节点001", "DE德国流媒体节点002", "DE德国流媒体节点003", "ES西班牙流媒体节点001", "ES西班牙流媒体节点002", "ES西班牙流媒体节点003", "FR法国流媒体节点001", "FR法国流媒体节点002", "FR法国流媒体节点003", "Germany 1 - Garena", "Germany 1 - Tiktok", "HK香港流媒体节点001", "HK香港流媒体节点002", "HK香港流媒体节点003", "HONGKONG_VAS_GARENA NO.1", "HONGKONG_VAS_GARENA NO.2", "HONGKONG_VAS_TIKTOK NO.1", "HONGKONG_VAS_TIKTOK NO.2", "Hà Nội LQ 🇻🇳", "IN印度001", "IN印度002", "IN印度003", "IT意大利流媒体节点001", "IT意大利流媒体节点002", "IT意大利流媒体节点003", "JAPAN_VAS_GARENA NO.1", "JAPAN_VAS_TIKTOK NO.1", "JP日本001+两元店.com", "JP日本002", "JP日本003", "KOREA_VAS_GARENA NO.1", "KOREA_VAS_TIKTOK NO.1", "KR韩国001", "KR韩国002", "KR韩国003", "NF南非001", "NF南非002", "NF南非003", "NL荷兰流媒体节点001", "NL荷兰流媒体节点002", "NL荷兰流媒体节点003", "SA沙特阿拉伯流媒体节点001", "SA沙特阿拉伯流媒体节点002", "SA沙特阿拉伯流媒体节点003", "SG新加坡001+两元店yyds", "SG新加坡002", "SG新加坡003", "SG新加坡流媒体节点001", "SG新加坡流媒体节点002", "SG新加坡流媒体节点003", "SINGAPORE_VAS_GARENA NO.1", "SINGAPORE_VAS_GARENA NO.2", "SINGAPORE_VAS_TIKTOK NO.1", "SINGAPORE_VAS_TIKTOK NO.2", "SWE瑞典流媒体节点001", "SWE瑞典流媒体节点002", "SWE瑞典流媒体节点003", "Singapore 2 - Garena", "Singapore 2 - Tiktok", "Singapore 2 - Tiktok (1)", "Sài Gòn 4 - Garena", "Sài Gòn 4 - Tiktok", "TTH-VN", "UAE迪拜流媒体节点001", "UAE迪拜流媒体节点002", "UAE迪拜流媒体节点003", "UK英国001", "UK英国002", "UK英国流媒体节点001", "UK英国流媒体节点002", "UK英国流媒体节点003", "USA_VAS_GARENA NO.1", "USA_VAS_TIKTOK NO.1", "USA美国001", "USA美国002", "USA美国003", "US美国流媒体节点001", "US美国流媒体节点002", "US美国流媒体节点003", "VIETNAM_VAS_GARENA NO.1", "VIETNAM_VAS_GARENA NO.2", "VIETNAM_VAS_GARENA NO.3", "VIETNAM_VAS_GARENA NO.4", "VIETNAM_VAS_GARENA NO.5", "VIETNAM_VAS_GARENA NO.6", "VIETNAM_VAS_GARENA NO.7", "VIETNAM_VAS_GARENA NO.8", "VIETNAM_VAS_TIKTOK NO.1", "VIETNAM_VAS_TIKTOK NO.2", "VIETNAM_VAS_TIKTOK NO.3", "VIETNAM_VAS_TIKTOK NO.4", "Việt Nam LQ 🇻🇳", "Việt Nam Pro 🇻🇳", "lu卢森堡001", "lu卢森堡002", "lu卢森堡003", "net.bawill.com", "∞G Ultimate 1 ( t.me/v2ray_share_file )", "∞G Ultimate 2 ( t.me/v2ray_share_file )", "三分机场.xyz 站内返利65", "剩余流量：94.75 GB", "剩余流量：980.67+GB", "套餐到期：2023-04-20", "套餐到期：2024-03-21", "官网：https://两元店.com/", "距离下次重置剩余：18+天", "距离下次重置剩余：19 天", "🇦🇺 Úc", "🇨🇦 Canada", "🇨🇳 Hồng Kông", "🇨🇳 Hồng Kông Premium", "🇩🇪 Đức", "🇭🇰 HONGKONG 01 (LQ)⚡", "🇭🇰5倍-临时-香港-高级节点1", "🇭🇰香港-80端口-01", "🇭🇰香港-80端口-02", "🇭🇰香港高速接入点-01", "🇭🇰香港高速接入点-02", "🇭🇰香港高速接入点-03", "🇭🇰香港高速接入点-04", "🇭🇰香港高速接入点-05", "🇭🇰香港高速接入点-06", "🇮🇳 Ấn Độ", "🇯🇵 Japan ⚡", "🇯🇵日本-80端口-04", "🇯🇵日本高速接入点-01", "🇯🇵日本高速接入点-02", "🇯🇵日本高速接入点-03", "🇯🇵日本高速接入点-04", "🇰🇷 Korea", "🇸🇬 SING 07 (IP - LQ)⚡", "🇸🇬 SINGAPORE 01 (LQ)", "🇸🇬 SINGAPORE 07 (LQ)", "🇸🇬 Sing Vip", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (10) (1)", "🇸🇬 𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁 𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 (14) (1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(13)+(1)", "🇸🇬+𝘇𝗶𝗻𝗴𝗳𝗮𝘀𝘁+𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲+(9)+(1)", "🇸🇬5倍-临时-新加坡-高级节点2", "🇸🇬新加坡高速接入点-01", "🇸🇬新加坡高速接入点-02", "🇸🇬新加坡高速接入点-03", "🇸🇬新加坡高速接入点-04", "🇹🇼台北高级接入点-01", "🇹🇼台北高级接入点-02", "🇺🇸 USA", "🇺🇸 USA 02 (LQ)", "🇺🇸美国高速接入点-01", "🇺🇸美国高速接入点-02", "🇻🇳 ANTI 01 (TIKTOK)⚡", "🇻🇳 ANTIDDOS 01 (HN)⚡", "🇻🇳 ANTIDDOS 02 (HN)⚡", "🇻🇳 ANTIDDOS 03 (HCM)⚡", "🇻🇳 ANTIDDOS 04 (HCM)⚡", "🇻🇳 Basic 2", "🇻🇳 FREE 2 tại MUA4G.XYZ", "🇻🇳 FREE tại MUA4G.XYZ", "🇻🇳 GAME HN (443 LQ)", "🇻🇳 Game 🔄🎮", "🇻🇳 HANOI 01 (LQ)", "🇻🇳 HANOI 01 (LQ)⚡", "🇻🇳 HANOI 02 (LQ)", "🇻🇳 HANOI 02 (LQ)⚡", "🇻🇳 HANOI 03 (IP - LQ)⚡", "🇻🇳 HANOI 03 (LQ)", "🇻🇳 HANOI 04 (IP - LQ)⚡", "🇻🇳 HANOI 05 (LQ)⚡", "🇻🇳 HANOI 06 (LQ)", "🇻🇳 HANOI 09 (LQ)⚡", "🇻🇳 HANOI 10 (IP - LQ)⚡", "🇻🇳 Hà Nội IDC Free 1", "🇻🇳 Hà Nội IDC Free 2", "🇻🇳 Hà Nội IDC Free 3", "🇻🇳 Spot HCM", "🇻🇳 Spot HN", "🇻🇳 Việt Nam 5 ⚡", "🇻🇳 zingfast Antiddos (1)", "🇻🇳 zingfast Antiddos (10)", "🇻🇳 zingfast Antiddos (11)", "🇻🇳 zingfast Antiddos (12)", "🇻🇳 zingfast Antiddos (13)", "🇻🇳 zingfast Antiddos (14)", "🇻🇳 zingfast Antiddos (2)", "🇻🇳 zingfast Antiddos (3)", "🇻🇳 zingfast Antiddos (4)", "🇻🇳 zingfast Antiddos (5)", "🇻🇳 zingfast Antiddos (6)", "🇻🇳 zingfast Antiddos (7)", "🇻🇳 zingfast Antiddos (8)", "🇻🇳 zingfast Antiddos (9)", "🇻🇳 zingfast Mobifone (1)", "🇻🇳 zingfast Mobifone (2)", "🇻🇳 zingfast Mobifone (3)", "🇻🇳 zingfast Mobifone (4)", "🇻🇳 zingfast Mobifone (5)", "🇻🇳 zingfast Mobifone (6)", "🇻🇳 zingfast Mobifone (7)", "🇻🇳 zingfast TikTok (1)", "🇻🇳 zingfast TikTok (2)", "🇻🇳 zingfast TikTok (3)", "🇻🇳 zingfast TikTok (4)", "🇻🇳 zingfast TikTok (5)", "🇻🇳 zingfast TikTok (6)", "🇻🇳 zingfast TikTok (7)", "🇻🇳 ĐÀ NẴNG 01 (LQ)", "🇻🇳 ĐÀ NẴNG 01 (LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (IP - LQ)⚡", "🇻🇳 ĐÀ NẴNG 02 (LQ)", "🇻🇳 ĐÀ NẴNG 03 (LQ)", "🇻🇳HN Free TLS 443🍄", "🇻🇳HN Free🍄", "🇻🇳LQ Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 2( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳LQ Bến Tre 4 ( t.me/share_v2ray_file )", "🇻🇳TLS 3 LiênQuânMobile", "🇻🇳Tiktok  Bến Tre 1 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 2 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 3 ( t.me/share_v2ray_file )", "🇻🇳Tiktok Bến Tre 4 ( t.me/share_v2ray_file )", "📶 Nước Anh-LQ-443", "📶 Nước Anh-TIKTOK", "📶 Nước MỸ - LQ-443🇺🇸", "📶 Nước MỸ - LQ🇺🇸", "📶 Nước Úc - LQ🇦🇺", "📶 Nước Úc -LQ-443🇦🇺", "📶5GTDC SV1-LQ🇻🇳", "📶5GTDC SV1-MOBIFONE🇻🇳", "📶JAPAN SV1-LQ-443🇯🇵", "📶JAPAN SV1-LQ-🇯🇵", "📶JAPAN SV2-LQ-443🇯🇵", "📶JAPAN SV2-LQ-🇯🇵", "📶SING MOBIFONE SV1-LQ🇸🇬", "📶SING SV1-443-LQ🇸🇬", "📶SING SV1-LQ🇸🇬", "📶SING SV2-443-LQ🇸🇬", "📶SING SV2-LQ🇸🇬", "📶SING SV2-MOBIFONE🇸🇬", "📶SING SV2-TIKTOK🇸🇬"] }
 rules:
   - 'DOMAIN-KEYWORD,adjust,REJECT'
   - 'DOMAIN-KEYWORD,admarvel,REJECT'
@@ -348,6 +460,7 @@ rules:
   - 'DOMAIN-SUFFIX,hotngay.vn,REJECT'
   - 'DOMAIN-SUFFIX,itim.vn,REJECT'
   - 'DOMAIN-SUFFIX,jeoway.com,REJECT'
+  - 'DOMAIN-SUFFIX,jp.zaloapp.com,REJECT'
   - 'DOMAIN-SUFFIX,js.aiservice.vn,REJECT'
   - 'DOMAIN-SUFFIX,jslog.zapps.vn,REJECT'
   - 'DOMAIN-SUFFIX,kabbmedia.com,REJECT'
@@ -541,6 +654,7 @@ rules:
   - 'DOMAIN-SUFFIX,zminer.zaloapp.com,REJECT'
   - 'DOMAIN-SUFFIX,zplayer-trk.zdn.vn,REJECT'
   - 'DOMAIN-SUFFIX,zplayer.trk.zapps.vn,REJECT'
+  - 'DOMAIN-SUFFIX,zpsocial-f52-org.zadn.vn,REJECT'
   - 'DOMAIN-SUFFIX,zt.me.zing.vn,REJECT'
   - 'DOMAIN-SUFFIX,zt1.me.zing.vn,REJECT'
   - 'DOMAIN-SUFFIX,ztevents.zaloapp.com,REJECT'
@@ -754,7 +868,6 @@ rules:
   - 'DOMAIN-SUFFIX,csmads.gameclick.vn,REJECT'
   - 'DOMAIN-SUFFIX,delecpuzz.com,REJECT'
   - 'DOMAIN-SUFFIX,delivery.senvangvn.com,REJECT'
-  - 'DOMAIN-SUFFIX,deltago.com,REJECT'
   - 'DOMAIN-SUFFIX,demopage.me,REJECT'
   - 'DOMAIN-SUFFIX,deqik.com,REJECT'
   - 'DOMAIN-SUFFIX,digi.vinut.com.vn,REJECT'
@@ -880,6 +993,7 @@ rules:
   - 'DOMAIN-SUFFIX,mto.cgv.vn,REJECT'
   - 'DOMAIN-SUFFIX,nct1.logging.nextsmarty.com,REJECT'
   - 'DOMAIN-SUFFIX,newlog.daidoanket.vn,REJECT'
+  - 'DOMAIN-SUFFIX,newlog.tapchitaichinh.vn,REJECT'
   - 'DOMAIN-SUFFIX,ng-vn-notice.gameitop.com,REJECT'
   - 'DOMAIN-SUFFIX,nstat.headlines.pw,REJECT'
   - 'DOMAIN-SUFFIX,offerwall.headlines.pw,REJECT'
@@ -1143,6 +1257,7 @@ rules:
   - 'DOMAIN-SUFFIX,adeventtracker.spotify.com,REJECT'
   - 'DOMAIN-SUFFIX,adexchangemachine.com,REJECT'
   - 'DOMAIN-SUFFIX,adflex.asia,REJECT'
+  - 'DOMAIN-SUFFIX,adforcast.com,REJECT'
   - 'DOMAIN-SUFFIX,adform.net,REJECT'
   - 'DOMAIN-SUFFIX,adfox.yandex.ru,REJECT'
   - 'DOMAIN-SUFFIX,adfstat.yandex.ru,REJECT'
@@ -1440,7 +1555,7 @@ rules:
   - 'DOMAIN-SUFFIX,api.sec.miui.com,REJECT'
   - 'DOMAIN-SUFFIX,api.setting.intl.miui.com,REJECT'
   - 'DOMAIN-SUFFIX,api.share.mob.com,REJECT'
-  - 'DOMAIN-SUFFIX,api.uca.cloud.unity3d.com,REJECT'
+  - 'DOMAIN-SUFFIX,apiv2.popupsmart.com,REJECT'
   - 'DOMAIN-SUFFIX,apm-collector.daumkakao.io,REJECT'
   - 'DOMAIN-SUFFIX,app-adforce.jp,REJECT'
   - 'DOMAIN-SUFFIX,app-analytics-v2.snapchat.com,REJECT'
@@ -1454,6 +1569,7 @@ rules:
   - 'DOMAIN-SUFFIX,appboycdn.com,REJECT'
   - 'DOMAIN-SUFFIX,appcloudbox.net,REJECT'
   - 'DOMAIN-SUFFIX,appier.net,REJECT'
+  - 'DOMAIN-SUFFIX,appier.xyz,REJECT'
   - 'DOMAIN-SUFFIX,applifier.com,REJECT'
   - 'DOMAIN-SUFFIX,applog.uc.cn,REJECT'
   - 'DOMAIN-SUFFIX,applogios.uc.cn,REJECT'
@@ -1465,6 +1581,7 @@ rules:
   - 'DOMAIN-SUFFIX,appnext-a.akamaihd.net,REJECT'
   - 'DOMAIN-SUFFIX,appnext.com,REJECT'
   - 'DOMAIN-SUFFIX,appnexus.com,REJECT'
+  - 'DOMAIN-SUFFIX,appodeal.com,REJECT'
   - 'DOMAIN-SUFFIX,appodealx.com,REJECT'
   - 'DOMAIN-SUFFIX,apps.sascdn.com,REJECT'
   - 'DOMAIN-SUFFIX,apptornado.com,REJECT'
@@ -1519,9 +1636,6 @@ rules:
   - 'DOMAIN-SUFFIX,bannertrack.net,REJECT'
   - 'DOMAIN-SUFFIX,bat.bing.com,REJECT'
   - 'DOMAIN-SUFFIX,batch.com,REJECT'
-  - 'DOMAIN-SUFFIX,batchlogging4-eu.truecaller.com,REJECT'
-  - 'DOMAIN-SUFFIX,batchlogging4-noneu.truecaller.com,REJECT'
-  - 'DOMAIN-SUFFIX,batchlogging4.truecaller.com,REJECT'
   - 'DOMAIN-SUFFIX,batmobi.net,REJECT'
   - 'DOMAIN-SUFFIX,bats.video.yahoo.com,REJECT'
   - 'DOMAIN-SUFFIX,bbangads.b-cdn.net,REJECT'
@@ -1616,6 +1730,7 @@ rules:
   - 'DOMAIN-SUFFIX,cdn.dynamicyield.com,REJECT'
   - 'DOMAIN-SUFFIX,cdn.openinstall.io,REJECT'
   - 'DOMAIN-SUFFIX,cdn.optimizely.com,REJECT'
+  - 'DOMAIN-SUFFIX,cdn.popupsmart.com,REJECT'
   - 'DOMAIN-SUFFIX,cdn.tinypass.com,REJECT'
   - 'DOMAIN-SUFFIX,cdn10236888.ahacdn.me,REJECT'
   - 'DOMAIN-SUFFIX,cdn11763314.ahacdn.me,REJECT'
@@ -1689,7 +1804,6 @@ rules:
   - 'DOMAIN-SUFFIX,conductrics.com,REJECT'
   - 'DOMAIN-SUFFIX,confiant-integrations.global.ssl.fastly.net,REJECT'
   - 'DOMAIN-SUFFIX,config.hiido.com,REJECT'
-  - 'DOMAIN-SUFFIX,config.uca.cloud.unity3d.com,REJECT'
   - 'DOMAIN-SUFFIX,connatix.com,REJECT'
   - 'DOMAIN-SUFFIX,connect.idocdn.com,REJECT'
   - 'DOMAIN-SUFFIX,connectad.io,REJECT'
@@ -1798,6 +1912,7 @@ rules:
   - 'DOMAIN-SUFFIX,e-planning.net,REJECT'
   - 'DOMAIN-SUFFIX,e-volution.ai,REJECT'
   - 'DOMAIN-SUFFIX,e.qq.com,REJECT'
+  - 'DOMAIN-SUFFIX,eacdn.com,REJECT'
   - 'DOMAIN-SUFFIX,easyads28.info,REJECT'
   - 'DOMAIN-SUFFIX,eclick.baidu.com,REJECT'
   - 'DOMAIN-SUFFIX,edge.adobedc.net,REJECT'
@@ -1928,6 +2043,7 @@ rules:
   - 'DOMAIN-SUFFIX,googletagservices.com,REJECT'
   - 'DOMAIN-SUFFIX,gop1.co,REJECT'
   - 'DOMAIN-SUFFIX,goraps.com,REJECT'
+  - 'DOMAIN-SUFFIX,gotrackier.com,REJECT'
   - 'DOMAIN-SUFFIX,growingio.com,REJECT'
   - 'DOMAIN-SUFFIX,growthrx.in,REJECT'
   - 'DOMAIN-SUFFIX,grvmedia.com,REJECT'
@@ -2115,6 +2231,7 @@ rules:
   - 'DOMAIN-SUFFIX,logupdate.avlyun.sec.miui.com,REJECT'
   - 'DOMAIN-SUFFIX,logx.optimizely.com,REJECT'
   - 'DOMAIN-SUFFIX,loopme.me,REJECT'
+  - 'DOMAIN-SUFFIX,lr-in-prod.com,REJECT'
   - 'DOMAIN-SUFFIX,lr-in.com,REJECT'
   - 'DOMAIN-SUFFIX,lsosad.com,REJECT'
   - 'DOMAIN-SUFFIX,luckyorange.com,REJECT'
@@ -2346,12 +2463,12 @@ rules:
   - 'DOMAIN-SUFFIX,popin.cc,REJECT'
   - 'DOMAIN-SUFFIX,popnc.com,REJECT'
   - 'DOMAIN-SUFFIX,popup.msn.com,REJECT'
+  - 'DOMAIN-SUFFIX,popup.popupsmart.com,REJECT'
   - 'DOMAIN-SUFFIX,postrelease.com,REJECT'
   - 'DOMAIN-SUFFIX,powerlinks.com,REJECT'
   - 'DOMAIN-SUFFIX,pps-log.op-mobile.opera.com,REJECT'
   - 'DOMAIN-SUFFIX,pr-bh.ybp.yahoo.com,REJECT'
   - 'DOMAIN-SUFFIX,pr.comet.yahoo.com,REJECT'
-  - 'DOMAIN-SUFFIX,prd-lender.cdp.internal.unity3d.com,REJECT'
   - 'DOMAIN-SUFFIX,prdredir.com,REJECT'
   - 'DOMAIN-SUFFIX,prebid.org,REJECT'
   - 'DOMAIN-SUFFIX,predataclient.b-cdn.net,REJECT'
@@ -2398,6 +2515,7 @@ rules:
   - 'DOMAIN-SUFFIX,px-intl.ucweb.com,REJECT'
   - 'DOMAIN-SUFFIX,px.dynamicyield.com,REJECT'
   - 'DOMAIN-SUFFIX,px.ucweb.com,REJECT'
+  - 'DOMAIN-SUFFIX,pzd.rakuten.co.jp,REJECT'
   - 'DOMAIN-SUFFIX,qrlsx.com,REJECT'
   - 'DOMAIN-SUFFIX,quantcount.com,REJECT'
   - 'DOMAIN-SUFFIX,quantserve.com,REJECT'
@@ -2465,7 +2583,9 @@ rules:
   - 'DOMAIN-SUFFIX,runative-syndicate.com,REJECT'
   - 'DOMAIN-SUFFIX,runative.com,REJECT'
   - 'DOMAIN-SUFFIX,rvadnet.com,REJECT'
+  - 'DOMAIN-SUFFIX,s-ad.rmp.rakuten.co.jp,REJECT'
   - 'DOMAIN-SUFFIX,s-adx.op-mobile.opera.com,REJECT'
+  - 'DOMAIN-SUFFIX,s-evt.rmp.rakuten.co.jp,REJECT'
   - 'DOMAIN-SUFFIX,s-onetag.com,REJECT'
   - 'DOMAIN-SUFFIX,s.adx.opera.com,REJECT'
   - 'DOMAIN-SUFFIX,s.trvdp.com,REJECT'
@@ -2551,6 +2671,7 @@ rules:
   - 'DOMAIN-SUFFIX,specificclick.net,REJECT'
   - 'DOMAIN-SUFFIX,specificmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,speedcurve.com,REJECT'
+  - 'DOMAIN-SUFFIX,sportradarserving.com,REJECT'
   - 'DOMAIN-SUFFIX,spotscenered.info,REJECT'
   - 'DOMAIN-SUFFIX,spotxchange.com,REJECT'
   - 'DOMAIN-SUFFIX,squeezely.tech,REJECT'
@@ -2580,7 +2701,6 @@ rules:
   - 'DOMAIN-SUFFIX,statwup.nimo.tv,REJECT'
   - 'DOMAIN-SUFFIX,steelhousemedia.com,REJECT'
   - 'DOMAIN-SUFFIX,steepto.com,REJECT'
-  - 'DOMAIN-SUFFIX,stg-lender.cdp.internal.unity3d.com,REJECT'
   - 'DOMAIN-SUFFIX,stickyadstv.com,REJECT'
   - 'DOMAIN-SUFFIX,stocks-analytics-events.apple.com,REJECT'
   - 'DOMAIN-SUFFIX,storeconfig.mistat.intl.xiaomi.com,REJECT'
@@ -2607,6 +2727,7 @@ rules:
   - 'DOMAIN-SUFFIX,taboola.com,REJECT'
   - 'DOMAIN-SUFFIX,tag.brandcdn.com,REJECT'
   - 'DOMAIN-SUFFIX,tag.getdrip.com,REJECT'
+  - 'DOMAIN-SUFFIX,tagcommander.com,REJECT'
   - 'DOMAIN-SUFFIX,tagger.opecloud.com,REJECT'
   - 'DOMAIN-SUFFIX,tagmanager.toast.com,REJECT'
   - 'DOMAIN-SUFFIX,tagrec.sphdigital.com,REJECT'
@@ -2801,6 +2922,7 @@ rules:
   - 'DOMAIN-SUFFIX,xlog.hiido.com,REJECT'
   - 'DOMAIN-SUFFIX,xlviirdr.com,REJECT'
   - 'DOMAIN-SUFFIX,xmlppcbuzz.com,REJECT'
+  - 'DOMAIN-SUFFIX,xmlrtb.com,REJECT'
   - 'DOMAIN-SUFFIX,xoom-ads.com,REJECT'
   - 'DOMAIN-SUFFIX,xtremepush.com,REJECT'
   - 'DOMAIN-SUFFIX,xxxjmp.com,REJECT'
@@ -2896,8 +3018,10 @@ rules:
   - 'DOMAIN-SUFFIX,abandonedaction.com,REJECT'
   - 'DOMAIN-SUFFIX,abbeyintervalfetched.com,REJECT'
   - 'DOMAIN-SUFFIX,abc-ads.com,REJECT'
+  - 'DOMAIN-SUFFIX,abkoxlikbzs.com,REJECT'
   - 'DOMAIN-SUFFIX,aboardlevel.com,REJECT'
   - 'DOMAIN-SUFFIX,above.com,REJECT'
+  - 'DOMAIN-SUFFIX,aboveredirect.top,REJECT'
   - 'DOMAIN-SUFFIX,abroad-ad.kingsoft-office-service.com,REJECT'
   - 'DOMAIN-SUFFIX,abruptroad.com,REJECT'
   - 'DOMAIN-SUFFIX,absentstream.com,REJECT'
@@ -2905,14 +3029,17 @@ rules:
   - 'DOMAIN-SUFFIX,absorbingband.com,REJECT'
   - 'DOMAIN-SUFFIX,abstractedauthority.com,REJECT'
   - 'DOMAIN-SUFFIX,absurdwater.com,REJECT'
+  - 'DOMAIN-SUFFIX,abyocawlfe.com,REJECT'
   - 'DOMAIN-SUFFIX,abz.com,REJECT'
   - 'DOMAIN-SUFFIX,ac.rnm.ca,REJECT'
   - 'DOMAIN-SUFFIX,acacdn.com,REJECT'
   - 'DOMAIN-SUFFIX,acdcdn.com,REJECT'
   - 'DOMAIN-SUFFIX,acduyqwnz.com,REJECT'
   - 'DOMAIN-SUFFIX,acento.com,REJECT'
+  - 'DOMAIN-SUFFIX,acertb.com,REJECT'
   - 'DOMAIN-SUFFIX,achcdn.com,REJECT'
   - 'DOMAIN-SUFFIX,achieverknee.com,REJECT'
+  - 'DOMAIN-SUFFIX,achilles-par.com,REJECT'
   - 'DOMAIN-SUFFIX,acidpigs.com,REJECT'
   - 'DOMAIN-SUFFIX,acint.net,REJECT'
   - 'DOMAIN-SUFFIX,ackcdn.net,REJECT'
@@ -3106,7 +3233,6 @@ rules:
   - 'DOMAIN-SUFFIX,adfactor.nl,REJECT'
   - 'DOMAIN-SUFFIX,adflight.com,REJECT'
   - 'DOMAIN-SUFFIX,adfonic.net,REJECT'
-  - 'DOMAIN-SUFFIX,adforcast.com,REJECT'
   - 'DOMAIN-SUFFIX,adforce.com,REJECT'
   - 'DOMAIN-SUFFIX,adform.com,REJECT'
   - 'DOMAIN-SUFFIX,adformdsp.net,REJECT'
@@ -3214,6 +3340,7 @@ rules:
   - 'DOMAIN-SUFFIX,adprojekt.pl,REJECT'
   - 'DOMAIN-SUFFIX,adprotected.com,REJECT'
   - 'DOMAIN-SUFFIX,adpxl.co,REJECT'
+  - 'DOMAIN-SUFFIX,adrastos-eli.com,REJECT'
   - 'DOMAIN-SUFFIX,adrazzi.com,REJECT'
   - 'DOMAIN-SUFFIX,adreactor.com,REJECT'
   - 'DOMAIN-SUFFIX,adreclaim.com,REJECT'
@@ -3710,8 +3837,10 @@ rules:
   - 'DOMAIN-SUFFIX,adzbazar.com,REJECT'
   - 'DOMAIN-SUFFIX,adzones.com,REJECT'
   - 'DOMAIN-SUFFIX,aeffe3nhrua5hua.com,REJECT'
+  - 'DOMAIN-SUFFIX,aegid-bal.com,REJECT'
   - 'DOMAIN-SUFFIX,aentafmxkmhea.com,REJECT'
   - 'DOMAIN-SUFFIX,aeppenr4ell56ers46nne9n2hunde.com,REJECT'
+  - 'DOMAIN-SUFFIX,aesch-mko.com,REJECT'
   - 'DOMAIN-SUFFIX,af-ad.co.uk,REJECT'
   - 'DOMAIN-SUFFIX,afcnuchxgo.com,REJECT'
   - 'DOMAIN-SUFFIX,aff.bstatic.com,REJECT'
@@ -3719,7 +3848,6 @@ rules:
   - 'DOMAIN-SUFFIX,affec.tv,REJECT'
   - 'DOMAIN-SUFFIX,affili.net,REJECT'
   - 'DOMAIN-SUFFIX,affiliate.1800flowers.com,REJECT'
-  - 'DOMAIN-SUFFIX,affiliate.doubleyourdating.com,REJECT'
   - 'DOMAIN-SUFFIX,affiliate.dtiserv.com,REJECT'
   - 'DOMAIN-SUFFIX,affiliate.gamestop.com,REJECT'
   - 'DOMAIN-SUFFIX,affiliate.mogs.com,REJECT'
@@ -3754,6 +3882,7 @@ rules:
   - 'DOMAIN-SUFFIX,africaewgrhdtb.com,REJECT'
   - 'DOMAIN-SUFFIX,agacelebir.com,REJECT'
   - 'DOMAIN-SUFFIX,agafurretor.com,REJECT'
+  - 'DOMAIN-SUFFIX,agapios-gla.com,REJECT'
   - 'DOMAIN-SUFFIX,agenduret.com,REJECT'
   - 'DOMAIN-SUFFIX,aggestose.com,REJECT'
   - 'DOMAIN-SUFFIX,agitated-potential.pro,REJECT'
@@ -3769,6 +3898,7 @@ rules:
   - 'DOMAIN-SUFFIX,ahqpqpdjpj.com,REJECT'
   - 'DOMAIN-SUFFIX,ahreprh2kfk8rfjr09.com,REJECT'
   - 'DOMAIN-SUFFIX,ahscdn.com,REJECT'
+  - 'DOMAIN-SUFFIX,ahura-maz.com,REJECT'
   - 'DOMAIN-SUFFIX,aihoasso.net,REJECT'
   - 'DOMAIN-SUFFIX,ailalbapt.club,REJECT'
   - 'DOMAIN-SUFFIX,ailpielei.com,REJECT'
@@ -3796,6 +3926,7 @@ rules:
   - 'DOMAIN-SUFFIX,alenty.com,REJECT'
   - 'DOMAIN-SUFFIX,algistorder.com,REJECT'
   - 'DOMAIN-SUFFIX,algorix.co,REJECT'
+  - 'DOMAIN-SUFFIX,alia-iso.com,REJECT'
   - 'DOMAIN-SUFFIX,aliascagesboxer.com,REJECT'
   - 'DOMAIN-SUFFIX,alignclamstram.com,REJECT'
   - 'DOMAIN-SUFFIX,alipromo.com,REJECT'
@@ -3809,6 +3940,9 @@ rules:
   - 'DOMAIN-SUFFIX,alstrome9riya10.com,REJECT'
   - 'DOMAIN-SUFFIX,alternativecpmgate.com,REJECT'
   - 'DOMAIN-SUFFIX,altronopubacc.com,REJECT'
+  - 'DOMAIN-SUFFIX,altwi-cha.com,REJECT'
+  - 'DOMAIN-SUFFIX,alxkpafhaka.com,REJECT'
+  - 'DOMAIN-SUFFIX,amanda-cle.info,REJECT'
   - 'DOMAIN-SUFFIX,amazingcounters.com,REJECT'
   - 'DOMAIN-SUFFIX,ambiguousquilt.com,REJECT'
   - 'DOMAIN-SUFFIX,ambitiousagreement.com,REJECT'
@@ -3819,6 +3953,7 @@ rules:
   - 'DOMAIN-SUFFIX,amobee.com,REJECT'
   - 'DOMAIN-SUFFIX,amsuclmqo.com,REJECT'
   - 'DOMAIN-SUFFIX,amucksballone.com,REJECT'
+  - 'DOMAIN-SUFFIX,amusingsnow.pro,REJECT'
   - 'DOMAIN-SUFFIX,an.acxapi.net,REJECT'
   - 'DOMAIN-SUFFIX,an.clhcdn.net,REJECT'
   - 'DOMAIN-SUFFIX,an.cliphub.io,REJECT'
@@ -3843,6 +3978,7 @@ rules:
   - 'DOMAIN-SUFFIX,analytics.cdn.live,REJECT'
   - 'DOMAIN-SUFFIX,analytics.clickdimensions.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics.cloudron.io,REJECT'
+  - 'DOMAIN-SUFFIX,analytics.convertlanguage.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics.gavelz.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics.getshogun.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics.gismart.xyz,REJECT'
@@ -3896,11 +4032,13 @@ rules:
   - 'DOMAIN-SUFFIX,android-stat.acestream.net,REJECT'
   - 'DOMAIN-SUFFIX,anglishreasts.site,REJECT'
   - 'DOMAIN-SUFFIX,anhui-attorney.com,REJECT'
+  - 'DOMAIN-SUFFIX,animikii-ana.com,REJECT'
   - 'DOMAIN-SUFFIX,annedouglas.com,REJECT'
   - 'DOMAIN-SUFFIX,annonser.dagbladet.no,REJECT'
   - 'DOMAIN-SUFFIX,anrdoezrs.net,REJECT'
   - 'DOMAIN-SUFFIX,antananarbdivu.com,REJECT'
   - 'DOMAIN-SUFFIX,antiadblocksystems.com,REJECT'
+  - 'DOMAIN-SUFFIX,antio-nar.com,REJECT'
   - 'DOMAIN-SUFFIX,antvoice.com,REJECT'
   - 'DOMAIN-SUFFIX,anxiousapples.com,REJECT'
   - 'DOMAIN-SUFFIX,anymedia.lv,REJECT'
@@ -3918,6 +4056,7 @@ rules:
   - 'DOMAIN-SUFFIX,api.ampiri.com,REJECT'
   - 'DOMAIN-SUFFIX,api.appnxt.net,REJECT'
   - 'DOMAIN-SUFFIX,api.apptentive.com,REJECT'
+  - 'DOMAIN-SUFFIX,api.autopilothq.com,REJECT'
   - 'DOMAIN-SUFFIX,api.catch.gift,REJECT'
   - 'DOMAIN-SUFFIX,api.clickaine.com,REJECT'
   - 'DOMAIN-SUFFIX,api.feedad.com,REJECT'
@@ -3936,6 +4075,7 @@ rules:
   - 'DOMAIN-SUFFIX,api.wipmania.com,REJECT'
   - 'DOMAIN-SUFFIX,api2.poperblocker.com,REJECT'
   - 'DOMAIN-SUFFIX,apis.appnxt.net,REJECT'
+  - 'DOMAIN-SUFFIX,apoll-amp.com,REJECT'
   - 'DOMAIN-SUFFIX,apolloprogram.io,REJECT'
   - 'DOMAIN-SUFFIX,app-promo.com,REJECT'
   - 'DOMAIN-SUFFIX,app.adjust.net.in,REJECT'
@@ -3950,7 +4090,6 @@ rules:
   - 'DOMAIN-SUFFIX,appfireworks.com,REJECT'
   - 'DOMAIN-SUFFIX,appflood.com,REJECT'
   - 'DOMAIN-SUFFIX,appia.com,REJECT'
-  - 'DOMAIN-SUFFIX,appier.com,REJECT'
   - 'DOMAIN-SUFFIX,applescringe.com,REJECT'
   - 'DOMAIN-SUFFIX,applog.camera360.com,REJECT'
   - 'DOMAIN-SUFFIX,appolicious.com,REJECT'
@@ -3979,11 +4118,14 @@ rules:
   - 'DOMAIN-SUFFIX,areasonsimon.club,REJECT'
   - 'DOMAIN-SUFFIX,arefqpiqfjsooi.com,REJECT'
   - 'DOMAIN-SUFFIX,argyresthia.com,REJECT'
+  - 'DOMAIN-SUFFIX,aries-nbl.com,REJECT'
   - 'DOMAIN-SUFFIX,arisedammiral.com,REJECT'
   - 'DOMAIN-SUFFIX,aromamirror.com,REJECT'
   - 'DOMAIN-SUFFIX,arsdev.net,REJECT'
   - 'DOMAIN-SUFFIX,arsenal54.xyz,REJECT'
+  - 'DOMAIN-SUFFIX,arsnivyr.com,REJECT'
   - 'DOMAIN-SUFFIX,arswabluchan.com,REJECT'
+  - 'DOMAIN-SUFFIX,artax-evn.com,REJECT'
   - 'DOMAIN-SUFFIX,artpever.com,REJECT'
   - 'DOMAIN-SUFFIX,as.sexad.net,REJECT'
   - 'DOMAIN-SUFFIX,as.webmd.com,REJECT'
@@ -4000,6 +4142,7 @@ rules:
   - 'DOMAIN-SUFFIX,ashcdn.com,REJECT'
   - 'DOMAIN-SUFFIX,ashoupsu.com,REJECT'
   - 'DOMAIN-SUFFIX,asiacpx.com,REJECT'
+  - 'DOMAIN-SUFFIX,aslau-cre.info,REJECT'
   - 'DOMAIN-SUFFIX,aso1.net,REJECT'
   - 'DOMAIN-SUFFIX,asp.animelab.com,REJECT'
   - 'DOMAIN-SUFFIX,assets.purch.com,REJECT'
@@ -4064,6 +4207,7 @@ rules:
   - 'DOMAIN-SUFFIX,axiabanners.exodus.gr,REJECT'
   - 'DOMAIN-SUFFIX,axillovely.com,REJECT'
   - 'DOMAIN-SUFFIX,axiomaticalley.com,REJECT'
+  - 'DOMAIN-SUFFIX,axkwmsivme.com,REJECT'
   - 'DOMAIN-SUFFIX,axmtrack.com,REJECT'
   - 'DOMAIN-SUFFIX,ay.delivery,REJECT'
   - 'DOMAIN-SUFFIX,aylarl.com,REJECT'
@@ -4088,6 +4232,7 @@ rules:
   - 'DOMAIN-SUFFIX,balancebreath.com,REJECT'
   - 'DOMAIN-SUFFIX,baleiambwee.com,REJECT'
   - 'DOMAIN-SUFFIX,balloontexture.com,REJECT'
+  - 'DOMAIN-SUFFIX,balor-ghn.com,REJECT'
   - 'DOMAIN-SUFFIX,bambluagamgona.com,REJECT'
   - 'DOMAIN-SUFFIX,bango.net,REJECT'
   - 'DOMAIN-SUFFIX,banik.redigy.cz,REJECT'
@@ -4183,6 +4328,7 @@ rules:
   - 'DOMAIN-SUFFIX,basebanner.com,REJECT'
   - 'DOMAIN-SUFFIX,basepush.com,REJECT'
   - 'DOMAIN-SUFFIX,baskettexture.com,REJECT'
+  - 'DOMAIN-SUFFIX,baste-znl.com,REJECT'
   - 'DOMAIN-SUFFIX,batbuilding.com,REJECT'
   - 'DOMAIN-SUFFIX,bathingonlay.com,REJECT'
   - 'DOMAIN-SUFFIX,batteusp2hilenor.com,REJECT'
@@ -4225,6 +4371,7 @@ rules:
   - 'DOMAIN-SUFFIX,behavioralengine.com,REJECT'
   - 'DOMAIN-SUFFIX,beholdascared.com,REJECT'
   - 'DOMAIN-SUFFIX,behootpokeys.com,REJECT'
+  - 'DOMAIN-SUFFIX,belia-glp.com,REJECT'
   - 'DOMAIN-SUFFIX,belstat.com,REJECT'
   - 'DOMAIN-SUFFIX,belstat.nl,REJECT'
   - 'DOMAIN-SUFFIX,belyyeusy.com,REJECT'
@@ -4240,6 +4387,7 @@ rules:
   - 'DOMAIN-SUFFIX,berkshiretoday.xyz,REJECT'
   - 'DOMAIN-SUFFIX,berlipurplin.com,REJECT'
   - 'DOMAIN-SUFFIX,berp.com,REJECT'
+  - 'DOMAIN-SUFFIX,berti-ian.com,REJECT'
   - 'DOMAIN-SUFFIX,besguses.pro,REJECT'
   - 'DOMAIN-SUFFIX,beshucklean.com,REJECT'
   - 'DOMAIN-SUFFIX,besmeargleor.com,REJECT'
@@ -4260,6 +4408,7 @@ rules:
   - 'DOMAIN-SUFFIX,bhcumsc.com,REJECT'
   - 'DOMAIN-SUFFIX,bi.yeshen.com,REJECT'
   - 'DOMAIN-SUFFIX,bid.glass,REJECT'
+  - 'DOMAIN-SUFFIX,bidclickmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,bidclix.com,REJECT'
   - 'DOMAIN-SUFFIX,bidclix.net,REJECT'
   - 'DOMAIN-SUFFIX,bidtrk.com,REJECT'
@@ -4268,6 +4417,7 @@ rules:
   - 'DOMAIN-SUFFIX,bikrurda.net,REJECT'
   - 'DOMAIN-SUFFIX,billboard.cz,REJECT'
   - 'DOMAIN-SUFFIX,billionpops.com,REJECT'
+  - 'DOMAIN-SUFFIX,bilqi-omv.com,REJECT'
   - 'DOMAIN-SUFFIX,bimlocal.com,REJECT'
   - 'DOMAIN-SUFFIX,binapptrack.click,REJECT'
   - 'DOMAIN-SUFFIX,binarymoney.site,REJECT'
@@ -4290,6 +4440,7 @@ rules:
   - 'DOMAIN-SUFFIX,blingbucks.com,REJECT'
   - 'DOMAIN-SUFFIX,blis.com,REJECT'
   - 'DOMAIN-SUFFIX,blockadsnot.com,REJECT'
+  - 'DOMAIN-SUFFIX,blode-cpq.com,REJECT'
   - 'DOMAIN-SUFFIX,blogads.com,REJECT'
   - 'DOMAIN-SUFFIX,blogcounter.de,REJECT'
   - 'DOMAIN-SUFFIX,blogrush.com,REJECT'
@@ -4351,9 +4502,11 @@ rules:
   - 'DOMAIN-SUFFIX,branovate.com,REJECT'
   - 'DOMAIN-SUFFIX,brazenwholly.com,REJECT'
   - 'DOMAIN-SUFFIX,breedwaste.com,REJECT'
+  - 'DOMAIN-SUFFIX,bricius-ing.com,REJECT'
   - 'DOMAIN-SUFFIX,brickandmobile.com,REJECT'
   - 'DOMAIN-SUFFIX,bridgetrack.com,REJECT'
   - 'DOMAIN-SUFFIX,brightinfo.com,REJECT'
+  - 'DOMAIN-SUFFIX,brije-cor.info,REJECT'
   - 'DOMAIN-SUFFIX,britepool.com,REJECT'
   - 'DOMAIN-SUFFIX,british-banners.com,REJECT'
   - 'DOMAIN-SUFFIX,brmvvjrc.com,REJECT'
@@ -4361,6 +4514,7 @@ rules:
   - 'DOMAIN-SUFFIX,broadcastbed.com,REJECT'
   - 'DOMAIN-SUFFIX,broaddoor.com,REJECT'
   - 'DOMAIN-SUFFIX,browser-update.org,REJECT'
+  - 'DOMAIN-SUFFIX,brynh-lei.com,REJECT'
   - 'DOMAIN-SUFFIX,bszmpfaj.com,REJECT'
   - 'DOMAIN-SUFFIX,btcadtop.com,REJECT'
   - 'DOMAIN-SUFFIX,btez8.xyz,REJECT'
@@ -4520,11 +4674,13 @@ rules:
   - 'DOMAIN-SUFFIX,chewcoat.com,REJECT'
   - 'DOMAIN-SUFFIX,chickensstation.com,REJECT'
   - 'DOMAIN-SUFFIX,chicoryapp.com,REJECT'
+  - 'DOMAIN-SUFFIX,chima-eoj.com,REJECT'
   - 'DOMAIN-SUFFIX,chinsnakes.com,REJECT'
   - 'DOMAIN-SUFFIX,chioneflake.com,REJECT'
   - 'DOMAIN-SUFFIX,chipmanksmochus.com,REJECT'
   - 'DOMAIN-SUFFIX,chitika.net,REJECT'
   - 'DOMAIN-SUFFIX,chl7rysobc3ol6xla.com,REJECT'
+  - 'DOMAIN-SUFFIX,chlod-qui.com,REJECT'
   - 'DOMAIN-SUFFIX,chocohjuanfhdhf.com,REJECT'
   - 'DOMAIN-SUFFIX,choconart.com,REJECT'
   - 'DOMAIN-SUFFIX,chokedsmelt.com,REJECT'
@@ -4533,6 +4689,7 @@ rules:
   - 'DOMAIN-SUFFIX,chqfhbqoskq.com,REJECT'
   - 'DOMAIN-SUFFIX,chusairt.com,REJECT'
   - 'DOMAIN-SUFFIX,chyjobopse.pro,REJECT'
+  - 'DOMAIN-SUFFIX,ciar-kep.com,REJECT'
   - 'DOMAIN-SUFFIX,cibleclick.com,REJECT'
   - 'DOMAIN-SUFFIX,ciddhwsjyjgip.com,REJECT'
   - 'DOMAIN-SUFFIX,cihakawkngiamu.com,REJECT'
@@ -4550,6 +4707,7 @@ rules:
   - 'DOMAIN-SUFFIX,claria.com,REJECT'
   - 'DOMAIN-SUFFIX,claroads.com,REJECT'
   - 'DOMAIN-SUFFIX,claroadsclick.com,REJECT'
+  - 'DOMAIN-SUFFIX,clarus-che.com,REJECT'
   - 'DOMAIN-SUFFIX,clashmobile.com,REJECT'
   - 'DOMAIN-SUFFIX,clayierglaiks.com,REJECT'
   - 'DOMAIN-SUFFIX,clc.stackoverflow.com,REJECT'
@@ -4781,6 +4939,7 @@ rules:
   - 'DOMAIN-SUFFIX,cwqljsecvr.com,REJECT'
   - 'DOMAIN-SUFFIX,cyberbounty.com,REJECT'
   - 'DOMAIN-SUFFIX,cybermonitor.com,REJECT'
+  - 'DOMAIN-SUFFIX,cynes-gwf.com,REJECT'
   - 'DOMAIN-SUFFIX,cynicaugural.com,REJECT'
   - 'DOMAIN-SUFFIX,czx5eyk0exbhwp43ya.biz,REJECT'
   - 'DOMAIN-SUFFIX,d.appsdt.com,REJECT'
@@ -4823,6 +4982,7 @@ rules:
   - 'DOMAIN-SUFFIX,d2zur9cc2gf1tx.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,d301cxwfymy227.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,d38fey2d93vryi.cloudfront.net,REJECT'
+  - 'DOMAIN-SUFFIX,d38psrni17bvxu.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,d3beefy8kd1pr7.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,d3cod80thn7qnd.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,d3cpib6kv2rja7.cloudfront.net,REJECT'
@@ -4840,6 +5000,7 @@ rules:
   - 'DOMAIN-SUFFIX,dads.wedobest.com.cn,REJECT'
   - 'DOMAIN-SUFFIX,dadsimz.com,REJECT'
   - 'DOMAIN-SUFFIX,dadslims.com,REJECT'
+  - 'DOMAIN-SUFFIX,daeda-iyk.com,REJECT'
   - 'DOMAIN-SUFFIX,daedaelousscri.com,REJECT'
   - 'DOMAIN-SUFFIX,dagd0kz7sipfl.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,daijopimplo.com,REJECT'
@@ -4863,7 +5024,6 @@ rules:
   - 'DOMAIN-SUFFIX,datadoghq-browser-agent.com,REJECT'
   - 'DOMAIN-SUFFIX,datafront.co,REJECT'
   - 'DOMAIN-SUFFIX,dataxu.com,REJECT'
-  - 'DOMAIN-SUFFIX,datingsmartlink.site,REJECT'
   - 'DOMAIN-SUFFIX,daudejuw.com,REJECT'
   - 'DOMAIN-SUFFIX,davaifoa.com,REJECT'
   - 'DOMAIN-SUFFIX,daz3rw5a5k4h.com,REJECT'
@@ -4931,6 +5091,7 @@ rules:
   - 'DOMAIN-SUFFIX,diguver.com,REJECT'
   - 'DOMAIN-SUFFIX,dihkstwa.com,REJECT'
   - 'DOMAIN-SUFFIX,dimfarlow.com,REJECT'
+  - 'DOMAIN-SUFFIX,dipaka-ead.com,REJECT'
   - 'DOMAIN-SUFFIX,diqkldlh.com,REJECT'
   - 'DOMAIN-SUFFIX,direct-xxx-access.com,REJECT'
   - 'DOMAIN-SUFFIX,directaclick.com,REJECT'
@@ -4990,6 +5151,7 @@ rules:
   - 'DOMAIN-SUFFIX,docksalmon.com,REJECT'
   - 'DOMAIN-SUFFIX,doerscharre.com,REJECT'
   - 'DOMAIN-SUFFIX,dogconcurrencesauce.com,REJECT'
+  - 'DOMAIN-SUFFIX,doigtepyramid.com,REJECT'
   - 'DOMAIN-SUFFIX,dolesminced.com,REJECT'
   - 'DOMAIN-SUFFIX,dollsdeclare.com,REJECT'
   - 'DOMAIN-SUFFIX,dolohen.com,REJECT'
@@ -5033,6 +5195,7 @@ rules:
   - 'DOMAIN-SUFFIX,duckswillsmoochyou.com,REJECT'
   - 'DOMAIN-SUFFIX,duf1ql28oaxcm3x6baf7wxvo6n29hrozqxbd13emc3na96i64j.xyz,REJECT'
   - 'DOMAIN-SUFFIX,dummieseardrum.com,REJECT'
+  - 'DOMAIN-SUFFIX,dvmludkami.com,REJECT'
   - 'DOMAIN-SUFFIX,dxgo95ahe73e8.cloudfront.net,REJECT'
   - 'DOMAIN-SUFFIX,dynamicadx.com,REJECT'
   - 'DOMAIN-SUFFIX,dynatrace.com,REJECT'
@@ -5052,7 +5215,6 @@ rules:
   - 'DOMAIN-SUFFIX,e5asyhilodice.com,REJECT'
   - 'DOMAIN-SUFFIX,e67repidwnfu7gcha.com,REJECT'
   - 'DOMAIN-SUFFIX,eabids.com,REJECT'
-  - 'DOMAIN-SUFFIX,eacdn.com,REJECT'
   - 'DOMAIN-SUFFIX,eadexchange.com,REJECT'
   - 'DOMAIN-SUFFIX,earnbigo.com,REJECT'
   - 'DOMAIN-SUFFIX,earnify.com,REJECT'
@@ -5084,6 +5246,7 @@ rules:
   - 'DOMAIN-SUFFIX,eehuzaih.com,REJECT'
   - 'DOMAIN-SUFFIX,eeksoabo.com,REJECT'
   - 'DOMAIN-SUFFIX,eelfadechi.com,REJECT'
+  - 'DOMAIN-SUFFIX,eemmlhcuydso.com,REJECT'
   - 'DOMAIN-SUFFIX,eensoans.com,REJECT'
   - 'DOMAIN-SUFFIX,efetotjnrjbntto.com,REJECT'
   - 'DOMAIN-SUFFIX,effateuncrisp.com,REJECT'
@@ -5137,6 +5300,7 @@ rules:
   - 'DOMAIN-SUFFIX,engine.espace.netavenir.com,REJECT'
   - 'DOMAIN-SUFFIX,enginenetwork.com,REJECT'
   - 'DOMAIN-SUFFIX,englandhogmane.com,REJECT'
+  - 'DOMAIN-SUFFIX,enki-mit.com,REJECT'
   - 'DOMAIN-SUFFIX,enlarget.com,REJECT'
   - 'DOMAIN-SUFFIX,enoratraffic.com,REJECT'
   - 'DOMAIN-SUFFIX,enquisite.com,REJECT'
@@ -5144,9 +5308,11 @@ rules:
   - 'DOMAIN-SUFFIX,enthusiasticdad.com,REJECT'
   - 'DOMAIN-SUFFIX,enviousthread.com,REJECT'
   - 'DOMAIN-SUFFIX,eo62cocntx.com,REJECT'
+  - 'DOMAIN-SUFFIX,eodufofs.com,REJECT'
   - 'DOMAIN-SUFFIX,epi0tzwi.com,REJECT'
   - 'DOMAIN-SUFFIX,epiccash.com,REJECT'
   - 'DOMAIN-SUFFIX,epigaeatoasty.com,REJECT'
+  - 'DOMAIN-SUFFIX,epiph-xvm.com,REJECT'
   - 'DOMAIN-SUFFIX,epmads.com,REJECT'
   - 'DOMAIN-SUFFIX,epomads2.4shared.com,REJECT'
   - 'DOMAIN-SUFFIX,epomapps.com,REJECT'
@@ -5155,6 +5321,7 @@ rules:
   - 'DOMAIN-SUFFIX,eqworks.com,REJECT'
   - 'DOMAIN-SUFFIX,eremuribleak.com,REJECT'
   - 'DOMAIN-SUFFIX,ergadx.com,REJECT'
+  - 'DOMAIN-SUFFIX,ermin-oxj.info,REJECT'
   - 'DOMAIN-SUFFIX,erosyndc.com,REJECT'
   - 'DOMAIN-SUFFIX,escudotagalog.com,REJECT'
   - 'DOMAIN-SUFFIX,esellerate.net,REJECT'
@@ -5256,6 +5423,7 @@ rules:
   - 'DOMAIN-SUFFIX,faultycanvas.com,REJECT'
   - 'DOMAIN-SUFFIX,faultyfowl.com,REJECT'
   - 'DOMAIN-SUFFIX,fbcdn2.com,REJECT'
+  - 'DOMAIN-SUFFIX,fcaijpwzvj.com,REJECT'
   - 'DOMAIN-SUFFIX,fd5orie8e.com,REJECT'
   - 'DOMAIN-SUFFIX,fdrgtt9edmej010.com,REJECT'
   - 'DOMAIN-SUFFIX,featassuage.com,REJECT'
@@ -5345,6 +5513,7 @@ rules:
   - 'DOMAIN-SUFFIX,freezelacking.com,REJECT'
   - 'DOMAIN-SUFFIX,frenchequal.pro,REJECT'
   - 'DOMAIN-SUFFIX,freychang.fun,REJECT'
+  - 'DOMAIN-SUFFIX,freyr-clo.com,REJECT'
   - 'DOMAIN-SUFFIX,friendlyduck.com,REJECT'
   - 'DOMAIN-SUFFIX,friendshipmale.com,REJECT'
   - 'DOMAIN-SUFFIX,frightenedpotato.com,REJECT'
@@ -5382,13 +5551,16 @@ rules:
   - 'DOMAIN-SUFFIX,galaksion.com,REJECT'
   - 'DOMAIN-SUFFIX,galaxien.com,REJECT'
   - 'DOMAIN-SUFFIX,galepush.net,REJECT'
+  - 'DOMAIN-SUFFIX,galla-uev.com,REJECT'
   - 'DOMAIN-SUFFIX,galopelikeantelope.com,REJECT'
   - 'DOMAIN-SUFFIX,ganemur.com,REJECT'
   - 'DOMAIN-SUFFIX,gangsstowapps.com,REJECT'
   - 'DOMAIN-SUFFIX,ganjbqrzhkle.com,REJECT'
   - 'DOMAIN-SUFFIX,garagesewe.com,REJECT'
+  - 'DOMAIN-SUFFIX,gargi-xba.com,REJECT'
   - 'DOMAIN-SUFFIX,gatetodisplaycontent.com,REJECT'
   - 'DOMAIN-SUFFIX,gatewayimpossibilitypursue.com,REJECT'
+  - 'DOMAIN-SUFFIX,gaut-hil.com,REJECT'
   - 'DOMAIN-SUFFIX,gavnogeeygaika.com,REJECT'
   - 'DOMAIN-SUFFIX,gayadnetwork.com,REJECT'
   - 'DOMAIN-SUFFIX,gbdixorxxdjykr.com,REJECT'
@@ -5424,6 +5596,7 @@ rules:
   - 'DOMAIN-SUFFIX,gimiliminibi.com,REJECT'
   - 'DOMAIN-SUFFIX,ginchoirblessed.com,REJECT'
   - 'DOMAIN-SUFFIX,ginpithed.live,REJECT'
+  - 'DOMAIN-SUFFIX,giris-con.com,REJECT'
   - 'DOMAIN-SUFFIX,gkpohvff.com,REJECT'
   - 'DOMAIN-SUFFIX,gladiol9us10.com,REJECT'
   - 'DOMAIN-SUFFIX,glanceguide.com,REJECT'
@@ -5443,6 +5616,7 @@ rules:
   - 'DOMAIN-SUFFIX,globalwebindex.net,REJECT'
   - 'DOMAIN-SUFFIX,globe7.com,REJECT'
   - 'DOMAIN-SUFFIX,globus-inter.com,REJECT'
+  - 'DOMAIN-SUFFIX,gloos-zus.info,REJECT'
   - 'DOMAIN-SUFFIX,glootang.net,REJECT'
   - 'DOMAIN-SUFFIX,glossysense.com,REJECT'
   - 'DOMAIN-SUFFIX,glugherg.net,REJECT'
@@ -5487,6 +5661,7 @@ rules:
   - 'DOMAIN-SUFFIX,gp.dejanews.com,REJECT'
   - 'DOMAIN-SUFFIX,gpbifgfjhgezk.com,REJECT'
   - 'DOMAIN-SUFFIX,gplayer.kmpmedia.net,REJECT'
+  - 'DOMAIN-SUFFIX,gpttuucg.com,REJECT'
   - 'DOMAIN-SUFFIX,gqsufwoasgfmex.com,REJECT'
   - 'DOMAIN-SUFFIX,grabify.link,REJECT'
   - 'DOMAIN-SUFFIX,gracefulsock.com,REJECT'
@@ -5505,6 +5680,7 @@ rules:
   - 'DOMAIN-SUFFIX,greystripe.com,REJECT'
   - 'DOMAIN-SUFFIX,grirtouy.com,REJECT'
   - 'DOMAIN-SUFFIX,gristleupanaya.com,REJECT'
+  - 'DOMAIN-SUFFIX,gronw-zis.com,REJECT'
   - 'DOMAIN-SUFFIX,grooksom.com,REJECT'
   - 'DOMAIN-SUFFIX,groopsie.net,REJECT'
   - 'DOMAIN-SUFFIX,groovinads.com,REJECT'
@@ -5526,19 +5702,23 @@ rules:
   - 'DOMAIN-SUFFIX,guppymedia.com,REJECT'
   - 'DOMAIN-SUFFIX,gurgle.zdbb.net,REJECT'
   - 'DOMAIN-SUFFIX,gwallet.com,REJECT'
+  - 'DOMAIN-SUFFIX,gwawl-oqs.com,REJECT'
   - 'DOMAIN-SUFFIX,gyfumobo.com,REJECT'
   - 'DOMAIN-SUFFIX,gyppedsquiss.com,REJECT'
   - 'DOMAIN-SUFFIX,h2aek6rv0ard.com,REJECT'
   - 'DOMAIN-SUFFIX,h78xb.pw,REJECT'
   - 'DOMAIN-SUFFIX,hacbfyvvsw.com,REJECT'
+  - 'DOMAIN-SUFFIX,hadabqhbewcrt.com,REJECT'
   - 'DOMAIN-SUFFIX,hadarone.com,REJECT'
   - 'DOMAIN-SUFFIX,hadesleta.com,REJECT'
   - 'DOMAIN-SUFFIX,hairdosslitter.casa,REJECT'
   - 'DOMAIN-SUFFIX,hairtease.com,REJECT'
   - 'DOMAIN-SUFFIX,hammerhearing.com,REJECT'
+  - 'DOMAIN-SUFFIX,handkerchiefpersonnel.com,REJECT'
   - 'DOMAIN-SUFFIX,handlingfaster.com,REJECT'
   - 'DOMAIN-SUFFIX,handyfield.com,REJECT'
   - 'DOMAIN-SUFFIX,hardtofindmilk.com,REJECT'
+  - 'DOMAIN-SUFFIX,harib-eir.info,REJECT'
   - 'DOMAIN-SUFFIX,haribdathesea.com,REJECT'
   - 'DOMAIN-SUFFIX,harmlesstacticalhonorable.com,REJECT'
   - 'DOMAIN-SUFFIX,harrenmedia.com,REJECT'
@@ -5557,6 +5737,7 @@ rules:
   - 'DOMAIN-SUFFIX,hedgehoghugsyou.com,REJECT'
   - 'DOMAIN-SUFFIX,heelseparateddistinguished.com,REJECT'
   - 'DOMAIN-SUFFIX,heeteefu.com,REJECT'
+  - 'DOMAIN-SUFFIX,heily-nin.com,REJECT'
   - 'DOMAIN-SUFFIX,heleric.com,REJECT'
   - 'DOMAIN-SUFFIX,helpedhandwritingintestine.com,REJECT'
   - 'DOMAIN-SUFFIX,hemiolajobson.website,REJECT'
@@ -5572,6 +5753,7 @@ rules:
   - 'DOMAIN-SUFFIX,hgads.com,REJECT'
   - 'DOMAIN-SUFFIX,hgub2polye.com,REJECT'
   - 'DOMAIN-SUFFIX,hh-btr.com,REJECT'
+  - 'DOMAIN-SUFFIX,hhbypdoecp.com,REJECT'
   - 'DOMAIN-SUFFIX,hidden.gogoceleb.com,REJECT'
   - 'DOMAIN-SUFFIX,hidelen.com,REJECT'
   - 'DOMAIN-SUFFIX,highcpmrevenuenetwork.com,REJECT'
@@ -5584,7 +5766,9 @@ rules:
   - 'DOMAIN-SUFFIX,highprofitnetwork.com,REJECT'
   - 'DOMAIN-SUFFIX,highrevenuecpm.com,REJECT'
   - 'DOMAIN-SUFFIX,hightrafficads.com,REJECT'
+  - 'DOMAIN-SUFFIX,hilarion-lar.com,REJECT'
   - 'DOMAIN-SUFFIX,hilariouszinc.com,REJECT'
+  - 'DOMAIN-SUFFIX,hildr-zah.com,REJECT'
   - 'DOMAIN-SUFFIX,hilltopads.net,REJECT'
   - 'DOMAIN-SUFFIX,histats.link,REJECT'
   - 'DOMAIN-SUFFIX,historicalrequest.com,REJECT'
@@ -5639,6 +5823,7 @@ rules:
   - 'DOMAIN-SUFFIX,howtubray.com,REJECT'
   - 'DOMAIN-SUFFIX,hpijkah.com,REJECT'
   - 'DOMAIN-SUFFIX,hppvkbfcuq.com,REJECT'
+  - 'DOMAIN-SUFFIX,hqtfjugceattb.com,REJECT'
   - 'DOMAIN-SUFFIX,hrgyhgxcbvwxs.com,REJECT'
   - 'DOMAIN-SUFFIX,hsbarbershop.co.uk,REJECT'
   - 'DOMAIN-SUFFIX,hscta.net,REJECT'
@@ -5685,6 +5870,7 @@ rules:
   - 'DOMAIN-SUFFIX,iam9p3eri3as5lc6hllege.com,REJECT'
   - 'DOMAIN-SUFFIX,iapclick.gowadogo.com,REJECT'
   - 'DOMAIN-SUFFIX,iasds01.com,REJECT'
+  - 'DOMAIN-SUFFIX,iason-eug.com,REJECT'
   - 'DOMAIN-SUFFIX,iaudienc.com,REJECT'
   - 'DOMAIN-SUFFIX,ib-ibi.com,REJECT'
   - 'DOMAIN-SUFFIX,ibanwatch.com,REJECT'
@@ -5715,6 +5901,7 @@ rules:
   - 'DOMAIN-SUFFIX,ilead.itrack.it,REJECT'
   - 'DOMAIN-SUFFIX,illegal-respond.pro,REJECT'
   - 'DOMAIN-SUFFIX,illfatedsnail.com,REJECT'
+  - 'DOMAIN-SUFFIX,illum-sec.com,REJECT'
   - 'DOMAIN-SUFFIX,illustriousoatmeal.com,REJECT'
   - 'DOMAIN-SUFFIX,ilogs.bytefence.com,REJECT'
   - 'DOMAIN-SUFFIX,iloopmobile.com,REJECT'
@@ -5762,6 +5949,7 @@ rules:
   - 'DOMAIN-SUFFIX,infopicked.com,REJECT'
   - 'DOMAIN-SUFFIX,information.com,REJECT'
   - 'DOMAIN-SUFFIX,ingameads.gameloft.com,REJECT'
+  - 'DOMAIN-SUFFIX,ingig-nes.com,REJECT'
   - 'DOMAIN-SUFFIX,ingivergrimier.com,REJECT'
   - 'DOMAIN-SUFFIX,inheritedfinnishdysfunctional.com,REJECT'
   - 'DOMAIN-SUFFIX,injectlocum.com,REJECT'
@@ -5814,6 +6002,7 @@ rules:
   - 'DOMAIN-SUFFIX,iodideeyebath.cam,REJECT'
   - 'DOMAIN-SUFFIX,iogjhbnoypg.com,REJECT'
   - 'DOMAIN-SUFFIX,ionnmjdsf.com,REJECT'
+  - 'DOMAIN-SUFFIX,iorwe-qmf.com,REJECT'
   - 'DOMAIN-SUFFIX,iovation.com,REJECT'
   - 'DOMAIN-SUFFIX,ipp2s.xyz,REJECT'
   - 'DOMAIN-SUFFIX,ipredictive.com,REJECT'
@@ -5823,6 +6012,7 @@ rules:
   - 'DOMAIN-SUFFIX,iqyqqfduxeql.com,REJECT'
   - 'DOMAIN-SUFFIX,irchincsp.com,REJECT'
   - 'DOMAIN-SUFFIX,ireklama.cz,REJECT'
+  - 'DOMAIN-SUFFIX,irene-eux.com,REJECT'
   - 'DOMAIN-SUFFIX,irncdn.com,REJECT'
   - 'DOMAIN-SUFFIX,irnwislborwvh.com,REJECT'
   - 'DOMAIN-SUFFIX,ironsource.mobi,REJECT'
@@ -5919,6 +6109,7 @@ rules:
   - 'DOMAIN-SUFFIX,k6r.net,REJECT'
   - 'DOMAIN-SUFFIX,kaffnet.com,REJECT'
   - 'DOMAIN-SUFFIX,kaikmumms.com,REJECT'
+  - 'DOMAIN-SUFFIX,kamak-mab.com,REJECT'
   - 'DOMAIN-SUFFIX,kameleoon.eu,REJECT'
   - 'DOMAIN-SUFFIX,kampyle.com,REJECT'
   - 'DOMAIN-SUFFIX,kangaroohiccups.com,REJECT'
@@ -5976,6 +6167,7 @@ rules:
   - 'DOMAIN-SUFFIX,ktwnjefd.com,REJECT'
   - 'DOMAIN-SUFFIX,ku2d3a7pa8mdi.com,REJECT'
   - 'DOMAIN-SUFFIX,kukury2hf8nd09.com,REJECT'
+  - 'DOMAIN-SUFFIX,kuno-gae.com,REJECT'
   - 'DOMAIN-SUFFIX,kupona.de,REJECT'
   - 'DOMAIN-SUFFIX,kurlichan.com,REJECT'
   - 'DOMAIN-SUFFIX,kvkaa.com,REJECT'
@@ -5995,6 +6187,7 @@ rules:
   - 'DOMAIN-SUFFIX,laughcloth.com,REJECT'
   - 'DOMAIN-SUFFIX,laughedaffront.com,REJECT'
   - 'DOMAIN-SUFFIX,launchbit.com,REJECT'
+  - 'DOMAIN-SUFFIX,laurentia-kor.com,REJECT'
   - 'DOMAIN-SUFFIX,laversleopold.guru,REJECT'
   - 'DOMAIN-SUFFIX,layer-ad.de,REJECT'
   - 'DOMAIN-SUFFIX,layer-ads.de,REJECT'
@@ -6022,6 +6215,7 @@ rules:
   - 'DOMAIN-SUFFIX,lem-computers.net,REJECT'
   - 'DOMAIN-SUFFIX,lemmatechnologies.com,REJECT'
   - 'DOMAIN-SUFFIX,leonodikeu9sj10.com,REJECT'
+  - 'DOMAIN-SUFFIX,leont-pfd.com,REJECT'
   - 'DOMAIN-SUFFIX,lettucelimit.com,REJECT'
   - 'DOMAIN-SUFFIX,lfeeder.com,REJECT'
   - 'DOMAIN-SUFFIX,lfstmedia.com,REJECT'
@@ -6032,6 +6226,7 @@ rules:
   - 'DOMAIN-SUFFIX,libedgolart.com,REJECT'
   - 'DOMAIN-SUFFIX,liftdna.com,REJECT'
   - 'DOMAIN-SUFFIX,ligatus.de,REJECT'
+  - 'DOMAIN-SUFFIX,ligeia-gip.com,REJECT'
   - 'DOMAIN-SUFFIX,lightboxcdn.com,REJECT'
   - 'DOMAIN-SUFFIX,lightcushion.com,REJECT'
   - 'DOMAIN-SUFFIX,lightningbarrelwretch.com,REJECT'
@@ -6058,6 +6253,7 @@ rules:
   - 'DOMAIN-SUFFIX,linkstorms.com,REJECT'
   - 'DOMAIN-SUFFIX,linkswaper.com,REJECT'
   - 'DOMAIN-SUFFIX,linktarget.com,REJECT'
+  - 'DOMAIN-SUFFIX,linus-axz.com,REJECT'
   - 'DOMAIN-SUFFIX,lionelimburse.com,REJECT'
   - 'DOMAIN-SUFFIX,liquidad.narrowcastmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,literalcorpulent.com,REJECT'
@@ -6129,12 +6325,17 @@ rules:
   - 'DOMAIN-SUFFIX,lptag.liveperson.net,REJECT'
   - 'DOMAIN-SUFFIX,lucidmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,lucklayed.info,REJECT'
+  - 'DOMAIN-SUFFIX,lugaid-kal.com,REJECT'
   - 'DOMAIN-SUFFIX,lumses.com,REJECT'
   - 'DOMAIN-SUFFIX,lunarads.com,REJECT'
   - 'DOMAIN-SUFFIX,luracancamus.com,REJECT'
   - 'DOMAIN-SUFFIX,luxope.com,REJECT'
   - 'DOMAIN-SUFFIX,luzulabeguile.com,REJECT'
   - 'DOMAIN-SUFFIX,lwgadm.com,REJECT'
+  - 'DOMAIN-SUFFIX,lwonclbench.com,REJECT'
+  - 'DOMAIN-SUFFIX,lykos-bzm.com,REJECT'
+  - 'DOMAIN-SUFFIX,lysim-lre.com,REJECT'
+  - 'DOMAIN-SUFFIX,lysimachus-aur.com,REJECT'
   - 'DOMAIN-SUFFIX,lyssapebble.com,REJECT'
   - 'DOMAIN-SUFFIX,lytics.io,REJECT'
   - 'DOMAIN-SUFFIX,lzjl.com,REJECT'
@@ -6251,6 +6452,7 @@ rules:
   - 'DOMAIN-SUFFIX,memeglobal.com,REJECT'
   - 'DOMAIN-SUFFIX,memorizeneck.com,REJECT'
   - 'DOMAIN-SUFFIX,memorycobweb.com,REJECT'
+  - 'DOMAIN-SUFFIX,menelaus-col.com,REJECT'
   - 'DOMAIN-SUFFIX,menlithium.com,REJECT'
   - 'DOMAIN-SUFFIX,mentaib.casa,REJECT'
   - 'DOMAIN-SUFFIX,meo257na3rch.com,REJECT'
@@ -6319,6 +6521,7 @@ rules:
   - 'DOMAIN-SUFFIX,mmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,mmismm.com,REJECT'
   - 'DOMAIN-SUFFIX,mmtro.com,REJECT'
+  - 'DOMAIN-SUFFIX,mnjhrleahonkq.com,REJECT'
   - 'DOMAIN-SUFFIX,moat.com,REJECT'
   - 'DOMAIN-SUFFIX,moatpixel.com,REJECT'
   - 'DOMAIN-SUFFIX,mob1ledev1ces.com,REJECT'
@@ -6412,6 +6615,7 @@ rules:
   - 'DOMAIN-SUFFIX,myaffiliates.com,REJECT'
   - 'DOMAIN-SUFFIX,mybbc-analytics.files.bbci.co.uk,REJECT'
   - 'DOMAIN-SUFFIX,mybestmv.com,REJECT'
+  - 'DOMAIN-SUFFIX,mybettermb.com,REJECT'
   - 'DOMAIN-SUFFIX,mybloglog.com,REJECT'
   - 'DOMAIN-SUFFIX,mybuys.com,REJECT'
   - 'DOMAIN-SUFFIX,mycounter.ua,REJECT'
@@ -6465,6 +6669,7 @@ rules:
   - 'DOMAIN-SUFFIX,nereserv.com,REJECT'
   - 'DOMAIN-SUFFIX,nervoussummer.com,REJECT'
   - 'DOMAIN-SUFFIX,nessainy.net,REJECT'
+  - 'DOMAIN-SUFFIX,nesto-sig.com,REJECT'
   - 'DOMAIN-SUFFIX,net-filter.com,REJECT'
   - 'DOMAIN-SUFFIX,netaffiliation.com,REJECT'
   - 'DOMAIN-SUFFIX,netagent.cz,REJECT'
@@ -6499,6 +6704,7 @@ rules:
   - 'DOMAIN-SUFFIX,nextgencounter.com,REJECT'
   - 'DOMAIN-SUFFIX,ng3.ads.warnerbros.com,REJECT'
   - 'DOMAIN-SUFFIX,nicksstevmark.com,REJECT'
+  - 'DOMAIN-SUFFIX,nicomachus-mac.com,REJECT'
   - 'DOMAIN-SUFFIX,nighedmend.live,REJECT'
   - 'DOMAIN-SUFFIX,nightfallroad.com,REJECT'
   - 'DOMAIN-SUFFIX,nikmldjhvxuov.xyz,REJECT'
@@ -6588,6 +6794,7 @@ rules:
   - 'DOMAIN-SUFFIX,ofhappinyer.com,REJECT'
   - 'DOMAIN-SUFFIX,ofnumeltor.com,REJECT'
   - 'DOMAIN-SUFFIX,ofsyuxaveckulgf.com,REJECT'
+  - 'DOMAIN-SUFFIX,oghqvffmnt.com,REJECT'
   - 'DOMAIN-SUFFIX,ohtctjiuow.com,REJECT'
   - 'DOMAIN-SUFFIX,oixohmve.com,REJECT'
   - 'DOMAIN-SUFFIX,ojjzpitr.com,REJECT'
@@ -6650,6 +6857,7 @@ rules:
   - 'DOMAIN-SUFFIX,ophan.theguardian.com,REJECT'
   - 'DOMAIN-SUFFIX,opienetwork.com,REJECT'
   - 'DOMAIN-SUFFIX,opinionstage.com,REJECT'
+  - 'DOMAIN-SUFFIX,oppvcuovgda.com,REJECT'
   - 'DOMAIN-SUFFIX,opsivesh.net,REJECT'
   - 'DOMAIN-SUFFIX,optimallimit.com,REJECT'
   - 'DOMAIN-SUFFIX,optimost.com,REJECT'
@@ -6659,7 +6867,10 @@ rules:
   - 'DOMAIN-SUFFIX,oranegfodnd.com,REJECT'
   - 'DOMAIN-SUFFIX,orangeads.fr,REJECT'
   - 'DOMAIN-SUFFIX,orbsclawand.com,REJECT'
+  - 'DOMAIN-SUFFIX,orest-vlv.com,REJECT'
   - 'DOMAIN-SUFFIX,organizationwoundedvast.com,REJECT'
+  - 'DOMAIN-SUFFIX,orige-duo.com,REJECT'
+  - 'DOMAIN-SUFFIX,orion-gen.com,REJECT'
   - 'DOMAIN-SUFFIX,oriori.com,REJECT'
   - 'DOMAIN-SUFFIX,orthitepetrous.com,REJECT'
   - 'DOMAIN-SUFFIX,ortshk.tapas.net,REJECT'
@@ -6732,6 +6943,7 @@ rules:
   - 'DOMAIN-SUFFIX,passfixx.com,REJECT'
   - 'DOMAIN-SUFFIX,passion-4.net,REJECT'
   - 'DOMAIN-SUFFIX,passtechusa.com,REJECT'
+  - 'DOMAIN-SUFFIX,patro-sfe.com,REJECT'
   - 'DOMAIN-SUFFIX,patrondescendantprecursor.com,REJECT'
   - 'DOMAIN-SUFFIX,pauewr4cw2xs5q.com,REJECT'
   - 'DOMAIN-SUFFIX,pay-ads.com,REJECT'
@@ -6788,15 +7000,18 @@ rules:
   - 'DOMAIN-SUFFIX,pfewuzbtkr.com,REJECT'
   - 'DOMAIN-SUFFIX,pgmediaserve.com,REJECT'
   - 'DOMAIN-SUFFIX,pgpartner.com,REJECT'
+  - 'DOMAIN-SUFFIX,phara-gte.com,REJECT'
   - 'DOMAIN-SUFFIX,phasmfranca.com,REJECT'
   - 'DOMAIN-SUFFIX,pheedo.com,REJECT'
   - 'DOMAIN-SUFFIX,phicmune.net,REJECT'
+  - 'DOMAIN-SUFFIX,philotheos-iov.com,REJECT'
   - 'DOMAIN-SUFFIX,phizzle.com,REJECT'
   - 'DOMAIN-SUFFIX,phloxsub73ulata.com,REJECT'
   - 'DOMAIN-SUFFIX,phluant.com,REJECT'
   - 'DOMAIN-SUFFIX,phoaraut.com,REJECT'
   - 'DOMAIN-SUFFIX,phobygipi.pro,REJECT'
   - 'DOMAIN-SUFFIX,phoenix-widget.com,REJECT'
+  - 'DOMAIN-SUFFIX,phoka-mps.com,REJECT'
   - 'DOMAIN-SUFFIX,phonearena.com,REJECT'
   - 'DOMAIN-SUFFIX,phoossax.net,REJECT'
   - 'DOMAIN-SUFFIX,photo-ads.co.uk,REJECT'
@@ -6819,6 +7034,7 @@ rules:
   - 'DOMAIN-SUFFIX,pimproll.com,REJECT'
   - 'DOMAIN-SUFFIX,ping.kitidi.com,REJECT'
   - 'DOMAIN-SUFFIX,pingback.issuu.com,REJECT'
+  - 'DOMAIN-SUFFIX,pingpepa.xyz,REJECT'
   - 'DOMAIN-SUFFIX,pipedream.wistia.com,REJECT'
   - 'DOMAIN-SUFFIX,pippio.com,REJECT'
   - 'DOMAIN-SUFFIX,piquantpigs.com,REJECT'
@@ -6878,11 +7094,13 @@ rules:
   - 'DOMAIN-SUFFIX,pointroll.com,REJECT'
   - 'DOMAIN-SUFFIX,pokkt.com,REJECT'
   - 'DOMAIN-SUFFIX,pokreess.com,REJECT'
+  - 'DOMAIN-SUFFIX,ponti-pzk.com,REJECT'
   - 'DOMAIN-SUFFIX,pontiflex.com,REJECT'
   - 'DOMAIN-SUFFIX,poole-collector-prod.n3twork.com,REJECT'
   - 'DOMAIN-SUFFIX,pop-under.ru,REJECT'
   - 'DOMAIN-SUFFIX,pop.bid,REJECT'
   - 'DOMAIN-SUFFIX,pop5sjhspear.com,REJECT'
+  - 'DOMAIN-SUFFIX,popmonetizer.net,REJECT'
   - 'DOMAIN-SUFFIX,popmyads.com,REJECT'
   - 'DOMAIN-SUFFIX,popruexo.com,REJECT'
   - 'DOMAIN-SUFFIX,popsoffer.com,REJECT'
@@ -6929,6 +7147,7 @@ rules:
   - 'DOMAIN-SUFFIX,prfwpclck.com,REJECT'
   - 'DOMAIN-SUFFIX,primaryads.com,REJECT'
   - 'DOMAIN-SUFFIX,primetime.net,REJECT'
+  - 'DOMAIN-SUFFIX,pritha-ner.com,REJECT'
   - 'DOMAIN-SUFFIX,privacy-policy.truste.com,REJECT'
   - 'DOMAIN-SUFFIX,privacyassistant.net,REJECT'
   - 'DOMAIN-SUFFIX,privatecash.com,REJECT'
@@ -6954,7 +7173,6 @@ rules:
   - 'DOMAIN-SUFFIX,promo.ulust.com,REJECT'
   - 'DOMAIN-SUFFIX,promo.vador.com,REJECT'
   - 'DOMAIN-SUFFIX,promobenef.com,REJECT'
-  - 'DOMAIN-SUFFIX,promos.bwin.it,REJECT'
   - 'DOMAIN-SUFFIX,promos.fling.com,REJECT'
   - 'DOMAIN-SUFFIX,promote.pair.com,REJECT'
   - 'DOMAIN-SUFFIX,promotionad.nvcam.net,REJECT'
@@ -6968,6 +7186,7 @@ rules:
   - 'DOMAIN-SUFFIX,props.id,REJECT'
   - 'DOMAIN-SUFFIX,propu.sh,REJECT'
   - 'DOMAIN-SUFFIX,proranktracker.com,REJECT'
+  - 'DOMAIN-SUFFIX,proserpina-zeb.com,REJECT'
   - 'DOMAIN-SUFFIX,prosumsit.com,REJECT'
   - 'DOMAIN-SUFFIX,protected-by.clarium.io,REJECT'
   - 'DOMAIN-SUFFIX,protexting.com,REJECT'
@@ -6975,6 +7194,7 @@ rules:
   - 'DOMAIN-SUFFIX,protraffic.com,REJECT'
   - 'DOMAIN-SUFFIX,provexia.com,REJECT'
   - 'DOMAIN-SUFFIX,providentsopport.site,REJECT'
+  - 'DOMAIN-SUFFIX,providingcrechepartnership.com,REJECT'
   - 'DOMAIN-SUFFIX,prsitecheck.com,REJECT'
   - 'DOMAIN-SUFFIX,prx.wayfair.com,REJECT'
   - 'DOMAIN-SUFFIX,ps7894.com,REJECT'
@@ -7041,6 +7261,7 @@ rules:
   - 'DOMAIN-SUFFIX,pwmctl.com,REJECT'
   - 'DOMAIN-SUFFIX,pxlctl.elpais.com,REJECT'
   - 'DOMAIN-SUFFIX,pymx5.com,REJECT'
+  - 'DOMAIN-SUFFIX,pyrrh-xbf.com,REJECT'
   - 'DOMAIN-SUFFIX,pzhuzlwjiymfos.com,REJECT'
   - 'DOMAIN-SUFFIX,q.azcentral.com,REJECT'
   - 'DOMAIN-SUFFIX,q.quora.com,REJECT'
@@ -7052,7 +7273,10 @@ rules:
   - 'DOMAIN-SUFFIX,qdfxeqhnjuknyy.com,REJECT'
   - 'DOMAIN-SUFFIX,qgicqtyh.com,REJECT'
   - 'DOMAIN-SUFFIX,qgxbluhsgad.com,REJECT'
+  - 'DOMAIN-SUFFIX,qjwglnuwqvr.com,REJECT'
+  - 'DOMAIN-SUFFIX,qksrv.net,REJECT'
   - 'DOMAIN-SUFFIX,qlcdnvkgi.com,REJECT'
+  - 'DOMAIN-SUFFIX,qmxgkgykaex.com,REJECT'
   - 'DOMAIN-SUFFIX,qnsr.com,REJECT'
   - 'DOMAIN-SUFFIX,qohxtklfmy.com,REJECT'
   - 'DOMAIN-SUFFIX,qp.ezfxpuo.cn,REJECT'
@@ -7076,6 +7300,7 @@ rules:
   - 'DOMAIN-SUFFIX,quicksandear.com,REJECT'
   - 'DOMAIN-SUFFIX,quietknowledge.com,REJECT'
   - 'DOMAIN-SUFFIX,quigo.com,REJECT'
+  - 'DOMAIN-SUFFIX,quinctus-isb.com,REJECT'
   - 'DOMAIN-SUFFIX,quinst.com,REJECT'
   - 'DOMAIN-SUFFIX,quisma.com,REJECT'
   - 'DOMAIN-SUFFIX,quizzicalzephyr.com,REJECT'
@@ -7099,6 +7324,7 @@ rules:
   - 'DOMAIN-SUFFIX,railwayrainstorm.com,REJECT'
   - 'DOMAIN-SUFFIX,rakamu.com,REJECT'
   - 'DOMAIN-SUFFIX,ralijqugghwqil.com,REJECT'
+  - 'DOMAIN-SUFFIX,rama-bac.com,REJECT'
   - 'DOMAIN-SUFFIX,ramp.purch.com,REJECT'
   - 'DOMAIN-SUFFIX,rampanel.com,REJECT'
   - 'DOMAIN-SUFFIX,rampidads.com,REJECT'
@@ -7175,12 +7401,14 @@ rules:
   - 'DOMAIN-SUFFIX,regulationprivilegescan.top,REJECT'
   - 'DOMAIN-SUFFIX,reinvigorate.net,REJECT'
   - 'DOMAIN-SUFFIX,relay.fiverr.com,REJECT'
+  - 'DOMAIN-SUFFIX,relievedgeoff.com,REJECT'
   - 'DOMAIN-SUFFIX,relmaxtop.com,REJECT'
   - 'DOMAIN-SUFFIX,relogotd.com,REJECT'
   - 'DOMAIN-SUFFIX,remarketingpixel.com,REJECT'
   - 'DOMAIN-SUFFIX,remotepwn.com,REJECT'
   - 'DOMAIN-SUFFIX,remox.com,REJECT'
   - 'DOMAIN-SUFFIX,remyyadan.online.fr,REJECT'
+  - 'DOMAIN-SUFFIX,replacementreluctance.com,REJECT'
   - 'DOMAIN-SUFFIX,reporo.net,REJECT'
   - 'DOMAIN-SUFFIX,report.uc.heytapmobi.com,REJECT'
   - 'DOMAIN-SUFFIX,reports.ubimo.com,REJECT'
@@ -7203,8 +7431,10 @@ rules:
   - 'DOMAIN-SUFFIX,revengemeantjackpot.com,REJECT'
   - 'DOMAIN-SUFFIX,revenue.net,REJECT'
   - 'DOMAIN-SUFFIX,revenuedirect.com,REJECT'
+  - 'DOMAIN-SUFFIX,revenuenetwork.com,REJECT'
   - 'DOMAIN-SUFFIX,reverysteno.com,REJECT'
   - 'DOMAIN-SUFFIX,revincenizam.com,REJECT'
+  - 'DOMAIN-SUFFIX,revmasters.com,REJECT'
   - 'DOMAIN-SUFFIX,revmob.com,REJECT'
   - 'DOMAIN-SUFFIX,revoketypes.com,REJECT'
   - 'DOMAIN-SUFFIX,revstats.com,REJECT'
@@ -7237,6 +7467,7 @@ rules:
   - 'DOMAIN-SUFFIX,rmedia.boston.com,REJECT'
   - 'DOMAIN-SUFFIX,rndskittytor.com,REJECT'
   - 'DOMAIN-SUFFIX,roar.com,REJECT'
+  - 'DOMAIN-SUFFIX,rober-srr.com,REJECT'
   - 'DOMAIN-SUFFIX,robinkornett.com,REJECT'
   - 'DOMAIN-SUFFIX,robotreplay.com,REJECT'
   - 'DOMAIN-SUFFIX,rochesterdata.com,REJECT'
@@ -7382,6 +7613,7 @@ rules:
   - 'DOMAIN-SUFFIX,seedtag.com,REJECT'
   - 'DOMAIN-SUFFIX,seekoflol.com,REJECT'
   - 'DOMAIN-SUFFIX,seethisinaction.com,REJECT'
+  - 'DOMAIN-SUFFIX,segment-cdn.producthunt.com,REJECT'
   - 'DOMAIN-SUFFIX,seisinhinger.com,REJECT'
   - 'DOMAIN-SUFFIX,selectivesummer.com,REJECT'
   - 'DOMAIN-SUFFIX,selfcampaign.com,REJECT'
@@ -7445,6 +7677,7 @@ rules:
   - 'DOMAIN-SUFFIX,siccash.com,REJECT'
   - 'DOMAIN-SUFFIX,sicksmash.com,REJECT'
   - 'DOMAIN-SUFFIX,sidebar.angelfire.com,REJECT'
+  - 'DOMAIN-SUFFIX,sigiward-ger.com,REJECT'
   - 'DOMAIN-SUFFIX,signalhq.com,REJECT'
   - 'DOMAIN-SUFFIX,silkysquirrel.com,REJECT'
   - 'DOMAIN-SUFFIX,sillyscrew.com,REJECT'
@@ -7454,6 +7687,7 @@ rules:
   - 'DOMAIN-SUFFIX,simpliftsbefore.info,REJECT'
   - 'DOMAIN-SUFFIX,simplycast.com,REJECT'
   - 'DOMAIN-SUFFIX,sincerebuffalo.com,REJECT'
+  - 'DOMAIN-SUFFIX,sindr-yet.com,REJECT'
   - 'DOMAIN-SUFFIX,sinewedretore.casa,REJECT'
   - 'DOMAIN-SUFFIX,sinisterbatchoddly.com,REJECT'
   - 'DOMAIN-SUFFIX,sinoa.com,REJECT'
@@ -7777,6 +8011,7 @@ rules:
   - 'DOMAIN-SUFFIX,tamgrt.com,REJECT'
   - 'DOMAIN-SUFFIX,tangerinenet.biz,REJECT'
   - 'DOMAIN-SUFFIX,tangibleteam.com,REJECT'
+  - 'DOMAIN-SUFFIX,tanit-adr.com,REJECT'
   - 'DOMAIN-SUFFIX,tapas.net,REJECT'
   - 'DOMAIN-SUFFIX,tapfiliate.com,REJECT'
   - 'DOMAIN-SUFFIX,tapgen.com,REJECT'
@@ -7860,6 +8095,7 @@ rules:
   - 'DOMAIN-SUFFIX,therichkids.com,REJECT'
   - 'DOMAIN-SUFFIX,thetarhaw.com,REJECT'
   - 'DOMAIN-SUFFIX,theweblocker.net,REJECT'
+  - 'DOMAIN-SUFFIX,thiem-csl.com,REJECT'
   - 'DOMAIN-SUFFIX,thinkablerice.com,REJECT'
   - 'DOMAIN-SUFFIX,thinknear.com,REJECT'
   - 'DOMAIN-SUFFIX,thinkupfront.com,REJECT'
@@ -7869,6 +8105,7 @@ rules:
   - 'DOMAIN-SUFFIX,thongedoptions.com,REJECT'
   - 'DOMAIN-SUFFIX,thoorest.com,REJECT'
   - 'DOMAIN-SUFFIX,thoosje.com,REJECT'
+  - 'DOMAIN-SUFFIX,thor-pom.com,REJECT'
   - 'DOMAIN-SUFFIX,threechurch.com,REJECT'
   - 'DOMAIN-SUFFIX,thrnt.com,REJECT'
   - 'DOMAIN-SUFFIX,throattrees.com,REJECT'
@@ -7876,6 +8113,7 @@ rules:
   - 'DOMAIN-SUFFIX,thrtle.com,REJECT'
   - 'DOMAIN-SUFFIX,thruport.com,REJECT'
   - 'DOMAIN-SUFFIX,thterras.com,REJECT'
+  - 'DOMAIN-SUFFIX,thutm-bru.com,REJECT'
   - 'DOMAIN-SUFFIX,tibacta.com,REJECT'
   - 'DOMAIN-SUFFIX,ticklesign.com,REJECT'
   - 'DOMAIN-SUFFIX,tidaltv.com,REJECT'
@@ -8071,6 +8309,7 @@ rules:
   - 'DOMAIN-SUFFIX,tvmtracker.com,REJECT'
   - 'DOMAIN-SUFFIX,twazzyoidwlfe.com,REJECT'
   - 'DOMAIN-SUFFIX,twinrdsrv.com,REJECT'
+  - 'DOMAIN-SUFFIX,twinrdsyn.com,REJECT'
   - 'DOMAIN-SUFFIX,twinsoflave.com,REJECT'
   - 'DOMAIN-SUFFIX,twittad.com,REJECT'
   - 'DOMAIN-SUFFIX,twokidjay.com,REJECT'
@@ -8163,6 +8402,7 @@ rules:
   - 'DOMAIN-SUFFIX,usounoul.com,REJECT'
   - 'DOMAIN-SUFFIX,utarget.co.uk,REJECT'
   - 'DOMAIN-SUFFIX,utarget.ru,REJECT'
+  - 'DOMAIN-SUFFIX,uthyr-que.com,REJECT'
   - 'DOMAIN-SUFFIX,utils.mediageneral.net,REJECT'
   - 'DOMAIN-SUFFIX,utimg.ru,REJECT'
   - 'DOMAIN-SUFFIX,uttermosthobbies.com,REJECT'
@@ -8262,6 +8502,7 @@ rules:
   - 'DOMAIN-SUFFIX,vknalqcnfxu.com,REJECT'
   - 'DOMAIN-SUFFIX,vlogerads.com,REJECT'
   - 'DOMAIN-SUFFIX,vlogoflife.com,REJECT'
+  - 'DOMAIN-SUFFIX,vltwoizzckpp.com,REJECT'
   - 'DOMAIN-SUFFIX,vmcxdaynkhnekp.com,REJECT'
   - 'DOMAIN-SUFFIX,vmmpxl.com,REJECT'
   - 'DOMAIN-SUFFIX,vmweb.net,REJECT'
@@ -8326,6 +8567,7 @@ rules:
   - 'DOMAIN-SUFFIX,weborama.com,REJECT'
   - 'DOMAIN-SUFFIX,weborama.fr,REJECT'
   - 'DOMAIN-SUFFIX,weborama.net,REJECT'
+  - 'DOMAIN-SUFFIX,webpartners.co,REJECT'
   - 'DOMAIN-SUFFIX,webpinp.com,REJECT'
   - 'DOMAIN-SUFFIX,webpower.com,REJECT'
   - 'DOMAIN-SUFFIX,webproducts.click,REJECT'
@@ -8342,6 +8584,7 @@ rules:
   - 'DOMAIN-SUFFIX,webtrekk.net,REJECT'
   - 'DOMAIN-SUFFIX,webtrends.telegraph.co.uk,REJECT'
   - 'DOMAIN-SUFFIX,webtrendslive.com,REJECT'
+  - 'DOMAIN-SUFFIX,wedxuaksargvlf.com,REJECT'
   - 'DOMAIN-SUFFIX,wegcash.com,REJECT'
   - 'DOMAIN-SUFFIX,weigezhiyao.com,REJECT'
   - 'DOMAIN-SUFFIX,welcomeneat.pro,REJECT'
@@ -8413,12 +8656,14 @@ rules:
   - 'DOMAIN-SUFFIX,wt-eu02.net,REJECT'
   - 'DOMAIN-SUFFIX,wt.soundestlink.com,REJECT'
   - 'DOMAIN-SUFFIX,wtlive.com,REJECT'
+  - 'DOMAIN-SUFFIX,wugnkialbvis.com,REJECT'
   - 'DOMAIN-SUFFIX,wuksaiho.net,REJECT'
   - 'DOMAIN-SUFFIX,wurfl.io,REJECT'
   - 'DOMAIN-SUFFIX,wuzbhjpvsf.com,REJECT'
   - 'DOMAIN-SUFFIX,wvhba6470p.com,REJECT'
   - 'DOMAIN-SUFFIX,wvnuubmothth.com,REJECT'
   - 'DOMAIN-SUFFIX,www-banner.chat.ru,REJECT'
+  - 'DOMAIN-SUFFIX,wxtnqppgaal.com,REJECT'
   - 'DOMAIN-SUFFIX,wyhifdpatl.com,REJECT'
   - 'DOMAIN-SUFFIX,wyvpjsfhywm.com,REJECT'
   - 'DOMAIN-SUFFIX,wywy.com,REJECT'
@@ -8441,11 +8686,13 @@ rules:
   - 'DOMAIN-SUFFIX,xgzyfpmfkxa.com,REJECT'
   - 'DOMAIN-SUFFIX,xiti.com,REJECT'
   - 'DOMAIN-SUFFIX,xius.com,REJECT'
+  - 'DOMAIN-SUFFIX,xjrwxfdphc.com,REJECT'
   - 'DOMAIN-SUFFIX,xkesalwueyz.com,REJECT'
   - 'DOMAIN-SUFFIX,xlviiirdr.com,REJECT'
   - 'DOMAIN-SUFFIX,xlwaluyw.com,REJECT'
   - 'DOMAIN-SUFFIX,xmkmuadkefzav.com,REJECT'
   - 'DOMAIN-SUFFIX,xmvftaoz.com,REJECT'
+  - 'DOMAIN-SUFFIX,xnfmbejucgoldi.com,REJECT'
   - 'DOMAIN-SUFFIX,xovq5nemr.com,REJECT'
   - 'DOMAIN-SUFFIX,xpbbyiqbcawamy.com,REJECT'
   - 'DOMAIN-SUFFIX,xpblitgpg.com,REJECT'
@@ -8484,6 +8731,7 @@ rules:
   - 'DOMAIN-SUFFIX,yespetor.com,REJECT'
   - 'DOMAIN-SUFFIX,yezsfzruvxbqa.com,REJECT'
   - 'DOMAIN-SUFFIX,yfetyg.com,REJECT'
+  - 'DOMAIN-SUFFIX,yhbngqpiag.com,REJECT'
   - 'DOMAIN-SUFFIX,yield-op-idsync.live.streamtheworld.com,REJECT'
   - 'DOMAIN-SUFFIX,yieldads.com,REJECT'
   - 'DOMAIN-SUFFIX,yieldmanager.com,REJECT'
@@ -8518,6 +8766,7 @@ rules:
   - 'DOMAIN-SUFFIX,youthfire.com,REJECT'
   - 'DOMAIN-SUFFIX,yovqnwnmpzz.com,REJECT'
   - 'DOMAIN-SUFFIX,yqmxfz.com,REJECT'
+  - 'DOMAIN-SUFFIX,yrumdfslwabv.com,REJECT'
   - 'DOMAIN-SUFFIX,ytimm.com,REJECT'
   - 'DOMAIN-SUFFIX,yuilop.com,REJECT'
   - 'DOMAIN-SUFFIX,yulunanews.name,REJECT'
@@ -8552,12 +8801,14 @@ rules:
   - 'DOMAIN-SUFFIX,zenkreka.com,REJECT'
   - 'DOMAIN-SUFFIX,zenzuu.com,REJECT'
   - 'DOMAIN-SUFFIX,zeofnuvzsh.com,REJECT'
+  - 'DOMAIN-SUFFIX,zeroredirect1.com,REJECT'
   - 'DOMAIN-SUFFIX,zeusclicks.com,REJECT'
   - 'DOMAIN-SUFFIX,zeustechnology.com,REJECT'
   - 'DOMAIN-SUFFIX,zhej78i1an8w6ceu.com,REJECT'
   - 'DOMAIN-SUFFIX,ziffdavis.com,REJECT'
   - 'DOMAIN-SUFFIX,zijaipse.com,REJECT'
   - 'DOMAIN-SUFFIX,zikroarg.com,REJECT'
+  - 'DOMAIN-SUFFIX,zimpolo.com,REJECT'
   - 'DOMAIN-SUFFIX,zintext.com,REJECT'
   - 'DOMAIN-SUFFIX,zlbdvgjlxm.com,REJECT'
   - 'DOMAIN-SUFFIX,zlp6s.pw,REJECT'
