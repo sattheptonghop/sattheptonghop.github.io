@@ -8,20 +8,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: update clash1
+    - name: update clash
       run: |
-        wget -O clash1 'https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash'
-    - name: edit clash1
+        wget -O clash 'https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash'
+    - name: edit clash
       run: |
-        sed -i 's/select,/url-test,/g' clash1
-        sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash1
+        sed -i 's/select,/url-test,/g' clash
+        sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash
     #- name: copy clash1
     #  run: mkdir build && cp clash1 build
       
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git config --local user.name "sattheptonghop"
-        git add clash1
+        git add clash
         git commit -m "Update clash"
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
