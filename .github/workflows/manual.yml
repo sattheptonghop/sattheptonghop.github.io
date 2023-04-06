@@ -13,12 +13,8 @@ jobs:
     - name: copy clash
       run: mkdir build && cp clash build
     - uses: actions/checkout@v3
-
-        - run: mkdir -p sattheptonghop.github.io
-
-        - run: echo hello > sattheptonghop.github.io/world.txt
-
+        - run: echo hello > world.txt
         - uses: actions/upload-artifact@v3
           with:
             name: my-artifact
-            path: sattheptonghop.github.io/world.txt
+            path: /
