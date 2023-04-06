@@ -14,7 +14,7 @@ jobs:
     - name: edit clash1
       run: |
         sed -i 's/select,/url-test,/g' clash1
-        sed -i 's/)"] }/^)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}/g' clash1
+        sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash1
     #- name: copy clash1
     #  run: mkdir build && cp clash build
       
