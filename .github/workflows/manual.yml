@@ -1,0 +1,14 @@
+name: Auto workflow
+
+on:  [push]
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Send greeting
+      run: |
+        wget -O clash https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash
+        echo "ok"
