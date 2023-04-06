@@ -11,8 +11,10 @@ jobs:
     - name: update clash
       run: |
         wget -O clash https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash
-        sed -ie "s/select,/url-test,/g" clash
-        sed -ie "s|)"] }|)"], url: "http://www.gstatic.com/generate_204", interval: 60}|g" clash
+    - name: edit clash
+      run: |
+        sed -e "s/select,/url-test,/g" clash
+        sed -e "s/)"] }/)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}/g" clash
     #- name: copy clash
     #  run: mkdir build && cp clash build
       
