@@ -20,7 +20,7 @@ jobs:
       
     - name: Commit files # transfer the new html files back into the repository
       run: |
-        git config --local user.name "sattheptonghop"
+        git config --global user.name "sattheptonghop"
         git add clash
         git commit -m "Update clash"
     - name: Push changes # push the output folder to your repo
