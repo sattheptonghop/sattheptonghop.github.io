@@ -7,13 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
+    - uses: actions/checkout@v2
     - name: update clash
       run: wget -O clash https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash
     - name: copy clash
       run: mkdir build && cp clash build
-    - run: echo hi > world.txt
-    - uses: actions/upload-artifact@v3
+    - name: Commit files # transfer the new html files back into the repository
+      run: |
+        git config --local user.name "sattheptonghop"
+        #git add ./docs
+        git commit -m "Updating"
+    - name: Push changes # push the output folder to your repo
+      uses: ad-m/github-push-action@master
       with:
-          name: my-artifact
-          path: ${{ github.workspace }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
