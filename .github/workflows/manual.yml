@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: update clash1
       run: |
-        cat https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash > clash1
+        wget -O clash1 'https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/sattheptonghop.github.io/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash'
     - name: edit clash1
       run: |
         sed -e "select,/url-test," clash1
