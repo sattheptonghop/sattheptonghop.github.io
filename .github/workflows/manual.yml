@@ -20,7 +20,7 @@ jobs:
       run: |
         git config --local user.name "sattheptonghop"
         git add ./clash
-        git commit -m "Updating"
+        git commit -m "Update clash"
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
