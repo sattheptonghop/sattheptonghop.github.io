@@ -8792,3 +8792,15 @@ rules:
   - 'DOMAIN-SUFFIX,zxc.world,REJECT'
   - 'DOMAIN-SUFFIX,zz.bdstatic.com,REJECT'
   - 'MATCH,T.ME/SHARE_V2RAY_FILE'
+script:
+  code: |
+    def main(ctx, metadata):
+      ip = metadata["dst_ip"] = ctx.resolve_ip(metadata["host"])
+      if ip == "":
+        return "DIRECT"
+
+      code = ctx.geoip(ip)
+      if code == "LAN" or code == "CN":
+        return "DIRECT"
+
+      return "Proxy" # default policy for requests which are not matched by any other script
