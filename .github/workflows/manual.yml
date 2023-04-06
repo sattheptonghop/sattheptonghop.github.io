@@ -16,12 +16,12 @@ jobs:
         sed -i 's/select,/url-test,/g' clash1
         sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash1
     #- name: copy clash1
-    #  run: mkdir build && cp clash build
+    #  run: mkdir build && cp clash1 build
       
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git config --local user.name "sattheptonghop"
-        git add --all
+        git add clash1
         git commit -m "Update clash"
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
