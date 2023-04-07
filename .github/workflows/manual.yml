@@ -18,8 +18,7 @@ jobs:
         sed -i 's/cipher: http/cipher: auto/g' clash
 # Insert lines in file, then save.
 #--------Begin here document-----------#
-vi clash
-<<x23LimitStringx23
+vi clash <<-ENDOFMESSAGE
 i
 script:  
               code: |  
@@ -37,7 +36,7 @@ script:
                   return "t.me/share_v2ray_file"
 ^[
 ZZ
-x23LimitStringx23
+ENDOFMESSAGE
 #----------End here document-----------#
 
 #- name: copy clash1
