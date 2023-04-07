@@ -22,7 +22,7 @@ jobs:
         git config --global user.email "tuananh88c25@gmail.com"
         git config --global user.name "sattheptonghop"
         git add clash
-        git commit -m "Update clash"
+        git commit -m "Update clash" -a
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
