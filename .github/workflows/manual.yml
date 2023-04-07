@@ -18,8 +18,9 @@ jobs:
     #  run: mkdir build && cp clash1 build
     - name: Commit files # transfer the new html files back into the repository
       run: |
-        #git config --global user.email "tuananh88c25@gmail.com"
-        #git config --global user.name "sattheptonghop"
+        ls ./
+        git config --global user.email "tuananh88c25@gmail.com"
+        git config --global user.name "sattheptonghop"
         git add --all #clash
         git commit -m "Update clash"
     - name: Push changes # push the output folder to your repo
