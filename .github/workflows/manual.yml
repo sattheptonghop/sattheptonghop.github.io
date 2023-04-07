@@ -16,6 +16,29 @@ jobs:
         sed -i 's/select,/url-test,/g' clash
         sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash
         sed -i 's/cipher: http/cipher: auto/g' clash
+# Insert lines in file, then save.
+#--------Begin here document-----------#
+vi clash <<x23LimitStringx23
+i
+script:  
+              code: |  
+                def main(ctx, metadata):  
+                  ip = metadata["dst_ip"]
+                  if ip == "":  
+                     ip = ctx.resolve_ip(metadata["host"])  
+                  if ip == "":  
+                    return "DIRECT"  
+
+                  code = ctx.geoip(ip)  
+                  if code == "LAN" or code == "CN" or code == "VN":  
+                    return "DIRECT"  "
+
+                  return "t.me/share_v2ray_file"
+^[
+ZZ
+x23LimitStringx23
+#----------End here document-----------#
+
 #- name: copy clash1
     #  run: mkdir build && cp clash1 build
       
