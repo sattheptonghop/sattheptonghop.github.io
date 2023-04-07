@@ -16,8 +16,6 @@ jobs:
         sed -i 's/select,/url-test,/g' clash
         sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash
         sed -i 's/cipher: http/cipher: auto/g' clash
-
-
 #- name: copy clash1
     #  run: mkdir build && cp clash1 build
       
