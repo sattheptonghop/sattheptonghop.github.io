@@ -19,6 +19,21 @@
 
 	  gtag('config', 'G-2GVP3BXVMM');
 	</script>
+	<script>
+		function slideShow() {
+		  const slides = document.querySelectorAll('.container');
+		  const interval = 1000; // 1 giây
+
+		  let currentIndex = 0;
+		  setInterval(() => {
+		    slides[currentIndex].style.display = 'none';
+		    currentIndex = (currentIndex + 1) % slides.length;
+		    slides[currentIndex].style.display = 'block';
+		  }, interval);
+		}
+
+		slideShow();
+	</script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
