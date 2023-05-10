@@ -29,6 +29,7 @@
 			slides[currentIndex].style.display = 'none';
 			currentIndex = (currentIndex + 1) % slides.length;
 			slides[currentIndex].style.display = 'block';
+			slides[currentIndex + 1].style.display = 'block';
 			}, interval);
 		}
 
