@@ -26,9 +26,10 @@
 
 			let currentIndex = 0;
 			setInterval(() => {
-				slides[currentIndex].style.display = 'none';
-				currentIndex = currentIndex + 1;
+				slides[currentIndex - 1 ].style.display = 'none';
 				slides[currentIndex].style.display = 'block';
+				slides[currentIndex + 1 ].style.display = 'block';
+				currentIndex = currentIndex + 1;
 				}, interval);
 		}
 
