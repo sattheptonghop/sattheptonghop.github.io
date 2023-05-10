@@ -26,10 +26,14 @@
 
 		  let currentIndex = 0;
 		  setInterval(() => {
-		    slides[currentIndex].style.display = 'none';
-		    currentIndex = (currentIndex + 1) % slides.length;
-		    slides[currentIndex].style.display = 'block';
-		  }, interval);
+			  if (slides[currentIndex]) {
+			    slides[currentIndex].style.display = 'none';
+			  }
+			  currentIndex = (currentIndex + 1) % slides.length;
+			  if (slides[currentIndex]) {
+			    slides[currentIndex].style.display = 'block';
+			  }
+			}, 1000);
 		}
 
 		slideShow();
