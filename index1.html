@@ -21,7 +21,8 @@
 	</script>
 	<script>
 		function slideShow() {
-			if (window.scrollY === 0) {
+			const mainNav = document.body.querySelector('#mainNav');
+    			if (mainNav) {
 				const slides = document.querySelectorAll('.card');
 				const interval = 1000; // 1 giây
 
