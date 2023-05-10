@@ -21,8 +21,8 @@
 	</script>
 	<script>
 		function slideShow() {
-			const mainNav = document.body.querySelector('#mainNav');
-			if (mainNav) {
+			const navbarCollapsible = document.body.querySelector('#mainNav');
+			if (!navbarCollapsible) {
 				const slides = document.querySelectorAll('.card');
 				const interval = 1000; // 1 giây
 
