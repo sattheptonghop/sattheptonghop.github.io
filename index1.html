@@ -21,15 +21,17 @@
 	</script>
 	<script>
 		function slideShow() {
-			const slides = document.querySelectorAll('.card');
-			const interval = 1000; // 1 giây
+			if (window.scrollY === 0) {
+				const slides = document.querySelectorAll('.card');
+				const interval = 1000; // 1 giây
 
-			let currentIndex = 0;
-			setInterval(() => {
-				slides[currentIndex].style.display = 'none';
-				currentIndex = (currentIndex + 1) % slides.length;
-				slides[currentIndex].style.display = 'block';
-				}, interval);
+				let currentIndex = 0;
+				setInterval(() => {
+					slides[currentIndex].style.display = 'none';
+					currentIndex = (currentIndex + 1) % slides.length;
+					slides[currentIndex].style.display = 'block';
+					}, interval);
+			}
 		}
 
 		document.addEventListener("DOMContentLoaded", function() {
