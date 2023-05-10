@@ -19,40 +19,6 @@
 
 	  gtag('config', 'G-2GVP3BXVMM');
 	</script>
-	<script>
-		function slideShow() {
-		  let i;
-		  let slideIndex = 0;
-		  const slides = document.querySelectorAll(".card");
-		  for (i = 0; i < slides.length; i++) {
-		    slides[i].style.display = "none";
-		  }
-		  slideIndex++;
-		  if (slideIndex > slides.length) {
-		    slideIndex = 1;
-		  }
-		  if (slideIndex < 1) {
-		    slideIndex = slides.length;
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  if (slideIndex == 1) {
-		    slides[slides.length-1].style.display = "block";
-		  } else if (slideIndex == 2) {
-		    slides[slides.length-1].style.display = "block";
-		    slides[0].style.display = "block";
-		  } else if (slideIndex == slides.length-1) {
-		    slides[slideIndex-2].style.display = "block";
-		    slides[0].style.display = "block";
-		  } else {
-		    slides[slideIndex-2].style.display = "block";
-		    slides[slideIndex].style.display = "block";
-		  }
-		  setTimeout(slideShow, 1000);
-		}
-		document.addEventListener("DOMContentLoaded", function() {
-  			slideShow();
-		});
-	</script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
