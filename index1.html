@@ -21,18 +21,33 @@
 	</script>
 	<script>
 		function slideShow() {
-			const slides = document.querySelectorAll('.card');
-			const interval = 1000; // 1 giây
-
-			let currentIndex = 0;
-			setInterval(() => {
-				slides[currentIndex].style.display = 'none';
-				slides[currentIndex + 1 ].style.display = 'block';
-				slides[currentIndex + 2 ].style.display = 'block';
-				currentIndex = currentIndex + 1;
-				}, interval);
+		  let i;
+		  const slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {
+		    slideIndex = 1;
+		  }
+		  if (slideIndex < 1) {
+		    slideIndex = slides.length;
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  if (slideIndex == 1) {
+		    slides[slides.length-1].style.display = "block";
+		  } else if (slideIndex == 2) {
+		    slides[slides.length-1].style.display = "block";
+		    slides[0].style.display = "block";
+		  } else if (slideIndex == slides.length-1) {
+		    slides[slideIndex-2].style.display = "block";
+		    slides[0].style.display = "block";
+		  } else {
+		    slides[slideIndex-2].style.display = "block";
+		    slides[slideIndex].style.display = "block";
+		  }
+		  setTimeout(slideShow, 1000);
 		}
-
 		document.addEventListener("DOMContentLoaded", function() {
   			slideShow();
 		});
