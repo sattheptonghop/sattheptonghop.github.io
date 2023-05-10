@@ -27,8 +27,8 @@
 			let currentIndex = 0;
 			setInterval(() => {
 				slides[currentIndex].style.display = 'none';
-				slides[(currentIndex + 1) % slides.length].style.display = 'block';
-				currentIndex = (currentIndex + 2) % slides.length;
+				slides[currentIndex + 1].style.display = 'block';
+				currentIndex = currentIndex + 1;
 				}, interval);
 		}
 
