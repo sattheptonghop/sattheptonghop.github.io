@@ -22,7 +22,8 @@
 	<script>
 		function slideShow() {
 		  let i;
-		  const slides = document.getElementsByClassName("mySlides");
+		  let slideIndex = 0;
+		  const slides = document.querySelectorAll(".card");
 		  for (i = 0; i < slides.length; i++) {
 		    slides[i].style.display = "none";
 		  }
